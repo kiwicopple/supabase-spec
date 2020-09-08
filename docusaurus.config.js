@@ -29,12 +29,12 @@ module.exports = {
           position: 'left',
           items: [
             {
-              label: 'GoTrue',
-              to: 'gotrue/',
+              label: 'GoTrue Client',
+              to: 'ref/gotrue',
             },
             {
-              label: 'PostREST',
-              to: 'postgrest/',
+              label: 'PostREST Client',
+              to: 'ref/postgrest',
             },
             // ... more items
           ],
@@ -106,6 +106,9 @@ module.exports = {
           sidebarPath: require.resolve('./sidebarsDocs.js'),
           // disableVersioning: true,
         },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
       },
     ],
   ],
@@ -115,10 +118,22 @@ module.exports = {
       {
         id: 'gotrue', // for first plugin-content-docs with "resources/" path
         // homePageId: "doc2",
-        path: './gotrue', // Path to data on filesystem, relative to site dir.
-        routeBasePath: 'gotrue', // URL Route.
+        path: './ref/gotrue', // Path to data on filesystem, relative to site dir.
+        routeBasePath: 'ref/gotrue', // URL Route.
         include: ['**/*.md', '**/*.mdx'],
-        sidebarPath: require.resolve('./sidebarsGoTrue.js'),
+        sidebarPath: require.resolve('./sidebar_spec_gotrue.js'),
+        // disableVersioning: true, // if not set with vesions, throw: Identifier 'React' has already been declared
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'postgrest', // for first plugin-content-docs with "resources/" path
+        // homePageId: "doc2",
+        path: './ref/postgrest', // Path to data on filesystem, relative to site dir.
+        routeBasePath: 'ref/postgrest', // URL Route.
+        include: ['**/*.md', '**/*.mdx'],
+        sidebarPath: require.resolve('./sidebar_spec_postgrest.js'),
         // disableVersioning: true, // if not set with vesions, throw: Identifier 'React' has already been declared
       },
     ],

@@ -1,0 +1,119 @@
+openref: 0.1
+
+info:
+  title:  PostgREST Client
+  version: 
+    0.0.1
+  description: |
+    An isomorphic JS client for [PostgREST](https://postgrest.io).
+  libraries: 
+    - name: 'JavaScript'
+      id: 'js'
+      version: '0.0.1'
+    - name: 'Python'
+      id: 'py'
+      version: '0.0.1'
+  docs:
+    sidebar:
+      - name: 'Getting started'
+        items:
+          - index
+          - Installation
+          - createClient()
+      - name: 'General functions'
+        items:
+          - select()
+          - insert()
+          - update()
+          - delete()
+      - name: 'Filters'
+        items:
+          - filter()
+          - eq()
+          - neq()
+
+pages:
+
+  Installation: 
+    description: |
+     Some awesome description.
+
+  createClient(): 
+    description: |
+     Some awesome description.
+
+  select():
+    $ref: signup
+    examples:
+      - name: Get all data from `'table'`
+        isCallout: true
+        js: |
+          ```js
+          const { error, data } = await postgrest
+            .from('table')
+            .select()
+          ```
+        py: | 
+          ```py
+          # Not yet implemented
+          ```
+
+  insert():
+    $ref: login
+    examples:
+      - name: Sign up a new user
+        js: |
+          ```js
+          const { error, data } = await gotrue.signup({
+            email: 'example@email.com',
+            password: 'example-password',
+          })
+          ```
+        py: | 
+          ```py
+          # Not yet implemented
+          ```
+   
+  update():
+    $ref: login
+
+  delete():
+    $ref: login
+
+  filter():
+    $ref: user
+    examples:
+      - name: Sign up a new user
+        js: |
+          ```js
+          const { error, data } = await signup({
+            email: 'example@email.com',
+            password: 'example-password',
+          })
+          ```
+
+  eq():
+    $ref: LoggedInUser.data
+    examples:
+      - name: Sign up a new user
+        js: |
+          ```js
+          const { error, user } = await gotrue.user()
+          const { error, data } = await signup({
+            email: 'example@email.com',
+            password: 'example-password',
+          })
+          ```
+
+  neq():
+    $ref: LoggedInUser.data
+    examples:
+      - name: Sign up a new user
+        js: |
+          ```js
+          const { error, user } = await gotrue.user()
+          const { error, data } = await signup({
+            email: 'example@email.com',
+            password: 'example-password',
+          })
+          ```

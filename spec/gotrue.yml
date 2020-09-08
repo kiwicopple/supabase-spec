@@ -1,13 +1,13 @@
 openref: 0.1
 
 info:
-  title:  GoTrue client library
+  title:  GoTrue Client
   version: 
     0.0.1
   description: |
     Some awesome description.
   libraries: 
-    - name: 'Javascript'
+    - name: 'JavaScript'
       id: 'js'
       version: '0.0.1'
     - name: 'Python'
@@ -17,32 +17,31 @@ info:
     sidebar:
       - name: 'Getting started'
         items:
-          About:
-          Installing:
-          createClient():
+          - index
+          - Installing
+          - createClient()
       - name: 'General functions'
         items:
-          signup():
-          login():
-          forgotPassword():
-          jwt():
+          - signup()
+          - login()
+          - forgotPassword()
+          - jwt()
       - name: 'User functions'
         items:
-          user():
-          user().data():
-          user().logout():
-      - name: 'Hooks/callback'
+          - user()
+          - user().data()
+          - user().logout()
+      - name: 'Hooks/callbacks'
         items:
-          onAuthStateChange():
-
+          - onAuthStateChange()
 
 pages:
 
-  About: 
+  Installing: 
     description: |
      Some awesome description.
 
-  Installing: 
+  createClient(): 
     description: |
      Some awesome description.
 
@@ -78,7 +77,12 @@ pages:
           # Not yet implemented
           ```
    
-  
+  forgotPassword():
+    $ref: login
+
+  jwt():
+    $ref: login
+
   user():
     $ref: user
     examples:
@@ -103,4 +107,22 @@ pages:
             password: 'example-password',
           })
           ```
+
+  user().logout():
+    $ref: LoggedInUser.data
+    examples:
+      - name: Sign up a new user
+        js: |
+          ```js
+          const { error, user } = await gotrue.user()
+          const { error, data } = await signup({
+            email: 'example@email.com',
+            password: 'example-password',
+          })
+          ```
+
+  onAuthStateChange(): 
+    description: |
+     Some awesome description.
+
     

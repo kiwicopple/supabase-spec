@@ -1,23 +1,22 @@
-// sidebarsResources.js
 module.exports = {
-  resources: [
+  docs: [
     {
       type: 'category',
-      label: 'Getting Started',
-      items: ['intro', 'about'],
+      label: 'Getting started',
+      items: ['index', 'installation', 'createclient'],
       collapsed: false,
     },
     {
       type: 'category',
       label: 'General functions',
-      items: ['signup', 'user-data'],
+      items: ['select', 'insert', 'update', 'delete'],
       collapsed: false,
     },
     {
       type: 'category',
-      label: 'User functions',
-      items: ['user', 'user-data'],
+      label: 'Filters',
+      items: ['filter', 'eq', 'neq'],
       collapsed: false,
-    },
+    }
   ],
 }
