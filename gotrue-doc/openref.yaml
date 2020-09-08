@@ -1,0 +1,79 @@
+openref: 0.1
+
+info:
+  title:  GoTrue client library
+  version: 
+    0.0.1
+  description: |
+    Some awesome description.
+  docs:
+    sidebar:
+      - name: 'Getting started'
+        items:
+          About:
+          Installing:
+          createClient():
+      - name: 'General functions'
+        items:
+          signup():
+          login():
+          forgotPassword():
+          jwt():
+      - name: 'User functions'
+        items:
+          user():
+          user().data():
+          user().logout():
+      - name: 'Hooks/callback'
+        items:
+          onAuthStateChange():
+
+
+pages:
+
+  About: 
+    description: |
+     Some awesome description.
+
+  Installing: 
+    description: |
+     Some awesome description.
+
+  signup():
+    $ref: signup
+    examples:
+      - name: Sign up a new user
+        libraries:
+          JavaScript: |
+            ```js
+            const { error, data } = await singup({
+              email: 'example@email.com',
+              password: 'example-password',
+            })
+   
+  
+  user():
+    $ref: user
+    examples:
+      - name: Sign up a new user
+        libraries:
+          JavaScript: |
+            ```js
+            const { error, data } = await singup({
+              email: 'example@email.com',
+              password: 'example-password',
+            })
+
+  user().data():
+    $ref: LoggedInUser.data
+    examples:
+      - name: Sign up a new user
+        libraries:
+          JavaScript: |
+            ```js
+            const { error, user } = await gotrue.user()
+            const { error, data } = await singup({
+              email: 'example@email.com',
+              password: 'example-password',
+            })
+    
