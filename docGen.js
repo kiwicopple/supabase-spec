@@ -1,13 +1,32 @@
 const yaml = require('js-yaml')
 const fs = require('fs')
 const path = require('path')
+const ts = require('typescript')
 
-const INPUT_FILE = path.join(__dirname, '/gotrue-doc/openref.yaml')
+
+const DOCS_INPUT = path.join(__dirname, '/gotrue-doc/openref.yaml')
+const DEFINITIONS_INPUT = path.join(__dirname, '/gotrue-doc/openref.d.ts')
 const OUTPUT_DIR = path.join(__dirname, '/gotrue/')
 
 const main = () => {
   try {
-    const spec = yaml.safeLoad(fs.readFileSync(INPUT_FILE, 'utf8'))
+    const spec = yaml.safeLoad(fs.readFileSync(DOCS_INPUT, 'utf8'))
+    let program = ts.createProgram([DEFINITIONS_INPUT], {})
+
+    // Get the checker, we will use it to find more about classes
+    let checker = program.getTypeChecker()
+    let output = []
+
+    // Visit every sourceFile in the program
+    for (const sourceFile of program.getSourceFiles()) {
+      if (!sourceFile.isDeclarationFile) {
+        // Walk the tree to search for classes
+        ts.forEachChild(sourceFile, visit)
+      }
+    }
+
+    console.log('JSON.stringify(output, undefined, 4)', output)
+
     const libraries = spec.info.libraries
 
     const pages = Object.entries(spec.pages).map(([pageName, data]) => {
@@ -17,14 +36,10 @@ const main = () => {
       // Generate example tabs
       const exampleContent = examples
         .map((x) => {
-          console.log('libraries', libraries)
-          let allTabs = libraries
-            .map((library) => {
-              let content = x[library.id] || 'None'
-              return Tab(library.id, content)
-            })
-            
-            console.log('allTabs', allTabs)
+          let allTabs = libraries.map((library) => {
+            let content = x[library.id] || 'None'
+            return Tab(library.id, content)
+          })
           return Example(x.name, libraries, allTabs.join('\n'))
         })
         .join('\n')

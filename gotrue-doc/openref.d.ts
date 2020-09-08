@@ -14,15 +14,12 @@ declare module "@supabase/gotrue-js" {
       access_token: string;
       provider: string;
     }
-  ) => Promise<SupabaseAuthResponse>;
+  ) => Promise<string>;
 
 
-  const login: (
-    email: string,
-    password: string
-  ) => Promise<SupabaseAuthResponse>;
+  const login: (email: string, password: string) => Promise<string>
   
-  const user: (jwt?: string, password: string) => Promise<LoggedInUser>;
+  const user: (jwt?: string, password?: string) => Promise<LoggedInUser>;
 
   const onAuthStateChange: (callbackFunction: string) => boolean;
 
