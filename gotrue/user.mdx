@@ -1,0 +1,35 @@
+---
+id: user
+title: user()
+slug: user
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+
+#### Sign up a new user
+
+<Tabs
+  groupId="libraries"
+  values={[{ label: 'Javascript', value: 'js' },{ label: 'Python', value: 'py' }]}>
+
+<TabItem value="js">
+
+```js
+const { error, data } = await signup({
+  email: 'example@email.com',
+  password: 'example-password',
+})
+```
+
+
+</TabItem>
+<TabItem value="py">
+
+None
+
+</TabItem>
+
+</Tabs>
