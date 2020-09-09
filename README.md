@@ -1,5 +1,12 @@
 # Website
 
+
+Demo site for testing out doc generation from TypeScript declarations
+
+Deploys to [https://supabase-spec.netlify.app/](https://supabase-spec.netlify.app/)
+
+
+
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
 ### Installation
