@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "lib": ["es6", "dom"]
+  },
+  "include": ["spec/gotrue.d.ts", "spec/postgrest.d.ts"],
+  "exclude": ["node_modules", "src/**/*.test.ts"]
+}

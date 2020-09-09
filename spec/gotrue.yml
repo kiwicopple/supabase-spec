@@ -2,10 +2,11 @@ openref: 0.1
 
 info:
   title:  GoTrue Client
-  version: 
-    0.0.1
   description: |
     Some awesome description.
+  version: 
+    0.0.1
+  definition: '@supabase/gotrue-js'
   libraries: 
     - name: 'JavaScript'
       id: 'js'
@@ -78,10 +79,10 @@ pages:
           ```
    
   forgotPassword():
-    $ref: login
+    $ref: forgotPassword
 
   jwt():
-    $ref: login
+    $ref: jwt
 
   user():
     $ref: user
@@ -109,7 +110,7 @@ pages:
           ```
 
   user().logout():
-    $ref: LoggedInUser.data
+    $ref: LoggedInUser.logout
     examples:
       - name: Sign up a new user
         js: |
@@ -122,7 +123,6 @@ pages:
           ```
 
   onAuthStateChange(): 
-    description: |
-     Some awesome description.
+    $ref: onAuthStateChange
 
     

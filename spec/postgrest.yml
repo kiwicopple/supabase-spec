@@ -2,10 +2,11 @@ openref: 0.1
 
 info:
   title:  PostgREST Client
-  version: 
-    0.0.1
   description: |
     An isomorphic JS client for [PostgREST](https://postgrest.io).
+  version: 
+    0.0.1
+  definition: '@supabase/postgrest-js'
   libraries: 
     - name: 'JavaScript'
       id: 'js'
@@ -46,7 +47,7 @@ pages:
     $ref: signup
     examples:
       - name: Get all data from `'table'`
-        isCallout: true
+        isSpotlight: true
         js: |
           ```js
           const { error, data } = await postgrest
