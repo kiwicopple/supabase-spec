@@ -3,11 +3,14 @@
  *    ts-node docGen.ts -o {output_dir} {input}.yml
  */
 
+import Example from './gen/components/Example'
+import Page from './gen/components/Page'
 import Sidebar from './gen/components/Sidebar'
 import SidebarCategory from './gen/components/SidebarCategory'
 import Tab from './gen/components/Tab'
 import Tabs from './gen/components/Tabs'
-import { slugify, tsDocCommentToMarkdown, writeToDisk } from './gen/lib/helpers'
+import { slugify, tsDocCommentToMdComment, writeToDisk } from './gen/lib/helpers'
+import { TsDoc, OpenRef } from './gen/definitions'
 
 const yaml = require('js-yaml')
 const fs = require('fs')
@@ -28,50 +31,14 @@ const main = (fileNames, options) => {
   }
 }
 
-const Page = ({ id, title, slug, description = '', examples = '', spotlight = '' }) =>
-  `
----
-id: ${id}
-title: ${title}
-slug: ${slug}
----
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-${description}
-
-${spotlight}
-
-## Parameters
-
-Some auto gen'd params
-
-## Result
-
-Some auto gen'd result
-
-## Errors
-
-Some auto gen'd errors
-
-${examples ? '## Examples' : ''}
-${examples}
-`.trim()
-
-const Example = (name, libraries = [], examples = []) =>
-  `
-### ${name}
-
-${Tabs(libraries, examples)}
-`.trim()
-
-// Do the hard work
 async function gen(inputFileName, outputDir) {
   const docSpec = yaml.safeLoad(fs.readFileSync(inputFileName, 'utf8'))
   const definition = modules.find((x) => JSON.parse(x.originalName) == docSpec.info.definition)
   const allLanguages = docSpec.info.libraries
-  const pages = Object.entries(docSpec.pages)
+  const pages = Object.entries(docSpec.pages).map(([name, x]: [string, OpenRef.Page]) => ({
+    ...x,
+    pageName: name,
+  }))
 
   // Sidebar
   const inputFileNameToSnakeCase = inputFileName.replace('/', '_').replace('.yml', '')
@@ -87,37 +54,27 @@ async function gen(inputFileName, outputDir) {
   console.log('The index was saved: ', indexFilename)
 
   // Generate Pages
-  pages.forEach(async ([pageName, data]: [string, { description?: string }]) => {
+  pages.forEach(async (pageSpec: OpenRef.Page) => {
     try {
-      const slug = slugify(pageName)
-      const hasTsReference = data['$ref'] || null
-      const tsDefinition = hasTsReference && extractTsDocNode(hasTsReference, definition)
-      if (hasTsReference && !tsDefinition) throw new Error('Definition not found: ' + hasTsReference)
+      const slug = slugify(pageSpec.pageName)
+      const hasTsRef = pageSpec['$ref'] || null
+      const tsDefinition = hasTsRef && extractTsDocNode(hasTsRef, definition)
+      if (hasTsRef && !tsDefinition) throw new Error('Definition not found: ' + hasTsRef)
 
-      // console.log('tsDefinition', tsDefinition)
-
-      // Generate example tabs
-      const examples = data['examples'] || []
-      const exampleContent = examples
-        .map((example) => {
-          let allTabs = generateTabs(allLanguages, example)
-          return Example(example.name, allLanguages, allTabs)
-        })
-        .join('\n')
-
-      const spotlight = examples.find((x) => x.isSpotlight) || null
-      const spotlightContent = !spotlight
-        ? ''
-        : Tabs(allLanguages, generateTabs(allLanguages, spotlight))
+      const functionDeclaration = tsDefinition?.type?.declaration
+      const paramsComments: TsDoc.CommentTag = tsDefinition.comment?.tags?.filter(x => x.tag == 'param')
+      const paramDefinitions: TsDoc.TypeDefinition[] = functionDeclaration.signatures[0].parameters // PMC: seems flaky.. why the [0]?
+      let parameters = `<ul>${paramDefinitions.map((x) => recurseThroughParams(x)).join(`\n`)}</ul>`
 
       // Create page
       const content = Page({
         slug,
         id: slug,
-        title: pageName,
-        spotlight: spotlightContent,
-        description: data.description || tsDocCommentToMarkdown(tsDefinition.comment),
-        examples: exampleContent,
+        title: pageSpec.pageName,
+        description: pageSpec.description || tsDocCommentToMdComment(tsDefinition.comment),
+        parameters,
+        spotlight: generateSpotlight(pageSpec['examples'] || [], allLanguages),
+        examples: generateExamples(pageSpec['examples'] || [], allLanguages),
       })
 
       // Write to disk
@@ -130,6 +87,30 @@ async function gen(inputFileName, outputDir) {
   })
 }
 
+function recurseThroughParams(paramDefinition: TsDoc.TypeDefinition) {
+  let children = paramDefinition.type?.declaration?.children
+  let subContent =
+    !!children && `\n<ul>${children.map((x) => recurseThroughParams(x)).join('\n')}</ul>`
+  return `\n\<li>\n${paramDefinition.name} ${subContent ? subContent : ''}\n</li>\n`
+}
+
+function generateExamples(specExamples: any, allLanguages: any) {
+  return specExamples.map((example) => {
+    let allTabs = Tabs(allLanguages, generateTabs(allLanguages, example))
+    return Example({ name: example.name, tabs: allTabs })
+  })
+}
+
+/**
+ * A spotlight is an example which appears at the top of the page.
+ */
+function generateSpotlight(specExamples: any, allLanguages: any) {
+  const spotlight = specExamples.find((x) => x.isSpotlight) || null
+  const spotlightContent = !spotlight
+    ? ''
+    : Tabs(allLanguages, generateTabs(allLanguages, spotlight))
+  return spotlightContent
+}
 
 function generateTabs(allLanguages: any, example: any) {
   return allLanguages
@@ -150,7 +131,7 @@ function extractTsDocNode(nodeToFind: string, definition: any) {
   let currentNode = null
   while (i < nodeTree.length) {
     currentNode = definition.children.find((x) => x.name == nodeTree[i]) || null
-    if (currentNode == null) break 
+    if (currentNode == null) break
     i++
   }
   return currentNode
@@ -172,7 +153,6 @@ function generateDocsIndexPage(docSpec: any) {
     description: docSpec.info.description,
   })
 }
-
 
 // Run everything
 const argv = require('minimist')(process.argv.slice(2))

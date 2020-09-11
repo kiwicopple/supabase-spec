@@ -1,7 +1,11 @@
 declare module '@supabase/gotrue-js' {
   /**
    * Some signup details
+   *
+   * Some other very long text.
+   *
    * @param {object} signupOptions The signup options look like this
+   * @param {string} [somethingElse] This one is optional
    */
   const signup: (
     signupOptions: {
@@ -10,11 +14,12 @@ declare module '@supabase/gotrue-js' {
       password: string
       access_token: string
       provider: string
-    }
+    },
+    somethingElse?: string
   ) => Promise<string>
 
   /**
-   * Some details about login().
+   * Some details about `login()`.
    *
    * Some other very long text.
    */

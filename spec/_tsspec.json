@@ -45,7 +45,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 47,
+											"line": 52,
 											"character": 8
 										}
 									],
@@ -78,7 +78,7 @@
 											"sources": [
 												{
 													"fileName": "spec/gotrue.d.ts",
-													"line": 47,
+													"line": 52,
 													"character": 9
 												}
 											]
@@ -96,7 +96,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 45,
+											"line": 50,
 											"character": 7
 										}
 									],
@@ -116,7 +116,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 46,
+											"line": 51,
 											"character": 10
 										}
 									],
@@ -148,7 +148,7 @@
 											"sources": [
 												{
 													"fileName": "spec/gotrue.d.ts",
-													"line": 46,
+													"line": 51,
 													"character": 11
 												}
 											]
@@ -170,7 +170,7 @@
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 44,
+									"line": 49,
 									"character": 24
 								}
 							]
@@ -198,7 +198,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 52,
+											"line": 57,
 											"character": 16
 										}
 									],
@@ -255,7 +255,7 @@
 													"sources": [
 														{
 															"fileName": "spec/gotrue.d.ts",
-															"line": 53,
+															"line": 58,
 															"character": 14
 														}
 													],
@@ -277,7 +277,7 @@
 											"sources": [
 												{
 													"fileName": "spec/gotrue.d.ts",
-													"line": 52,
+													"line": 57,
 													"character": 17
 												}
 											]
@@ -295,7 +295,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 60,
+											"line": 65,
 											"character": 7
 										}
 									],
@@ -315,7 +315,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 62,
+											"line": 67,
 											"character": 16
 										}
 									],
@@ -335,7 +335,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 61,
+											"line": 66,
 											"character": 14
 										}
 									],
@@ -355,7 +355,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 63,
+											"line": 68,
 											"character": 9
 										}
 									],
@@ -375,7 +375,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 64,
+											"line": 69,
 											"character": 6
 										}
 									],
@@ -395,7 +395,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 65,
+											"line": 70,
 											"character": 19
 										}
 									],
@@ -415,7 +415,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 66,
+											"line": 71,
 											"character": 8
 										}
 									],
@@ -435,7 +435,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 67,
+											"line": 72,
 											"character": 14
 										}
 									],
@@ -458,7 +458,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 57,
+											"line": 62,
 											"character": 17
 										}
 									],
@@ -505,7 +505,7 @@
 											"sources": [
 												{
 													"fileName": "spec/gotrue.d.ts",
-													"line": 57,
+													"line": 62,
 													"character": 18
 												}
 											]
@@ -534,13 +534,13 @@
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 50,
+									"line": 55,
 									"character": 20
 								}
 							]
 						},
 						{
-							"id": 43,
+							"id": 44,
 							"name": "forgotPassword",
 							"kind": 32,
 							"kindString": "Variable",
@@ -555,14 +555,14 @@
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 28,
+									"line": 33,
 									"character": 22
 								}
 							],
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 44,
+									"id": 45,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -571,7 +571,7 @@
 									},
 									"signatures": [
 										{
-											"id": 45,
+											"id": 46,
 											"name": "__call",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -580,7 +580,7 @@
 											},
 											"parameters": [
 												{
-													"id": 46,
+													"id": 47,
 													"name": "email",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -593,7 +593,7 @@
 													}
 												},
 												{
-													"id": 47,
+													"id": 48,
 													"name": "password",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -608,7 +608,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 270,
+												"id": 271,
 												"typeArguments": [
 													{
 														"type": "intrinsic",
@@ -622,7 +622,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 28,
+											"line": 33,
 											"character": 23
 										}
 									]
@@ -630,7 +630,7 @@
 							}
 						},
 						{
-							"id": 38,
+							"id": 39,
 							"name": "login",
 							"kind": 32,
 							"kindString": "Variable",
@@ -639,20 +639,20 @@
 								"isConst": true
 							},
 							"comment": {
-								"shortText": "Some details about login().",
+								"shortText": "Some details about `login()`.",
 								"text": "Some other very long text.\n"
 							},
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 21,
+									"line": 26,
 									"character": 13
 								}
 							],
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 39,
+									"id": 40,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -661,7 +661,7 @@
 									},
 									"signatures": [
 										{
-											"id": 40,
+											"id": 41,
 											"name": "__call",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -670,7 +670,7 @@
 											},
 											"parameters": [
 												{
-													"id": 41,
+													"id": 42,
 													"name": "email",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -683,7 +683,7 @@
 													}
 												},
 												{
-													"id": 42,
+													"id": 43,
 													"name": "password",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -698,7 +698,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 270,
+												"id": 271,
 												"typeArguments": [
 													{
 														"type": "intrinsic",
@@ -712,7 +712,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 21,
+											"line": 26,
 											"character": 14
 										}
 									]
@@ -720,7 +720,7 @@
 							}
 						},
 						{
-							"id": 53,
+							"id": 54,
 							"name": "onAuthStateChange",
 							"kind": 32,
 							"kindString": "Variable",
@@ -735,14 +735,14 @@
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 42,
+									"line": 47,
 									"character": 25
 								}
 							],
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 54,
+									"id": 55,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -751,7 +751,7 @@
 									},
 									"signatures": [
 										{
-											"id": 55,
+											"id": 56,
 											"name": "__call",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -760,7 +760,7 @@
 											},
 											"parameters": [
 												{
-													"id": 56,
+													"id": 57,
 													"name": "callbackFunction",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -782,7 +782,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 42,
+											"line": 47,
 											"character": 26
 										}
 									]
@@ -800,18 +800,24 @@
 							},
 							"comment": {
 								"shortText": "Some signup details",
+								"text": "Some other very long text.\n",
 								"tags": [
 									{
 										"tag": "param",
-										"text": "The signup options look like this\n",
+										"text": "The signup options look like this",
 										"param": "signupOptions"
+									},
+									{
+										"tag": "param",
+										"text": "This one is optional\n",
+										"param": "[somethingElse]"
 									}
 								]
 							},
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 6,
+									"line": 10,
 									"character": 14
 								}
 							],
@@ -865,7 +871,7 @@
 																	"sources": [
 																		{
 																			"fileName": "spec/gotrue.d.ts",
-																			"line": 11,
+																			"line": 15,
 																			"character": 18
 																		}
 																	],
@@ -888,7 +894,7 @@
 																	"sources": [
 																		{
 																			"fileName": "spec/gotrue.d.ts",
-																			"line": 9,
+																			"line": 13,
 																			"character": 11
 																		}
 																	],
@@ -908,7 +914,7 @@
 																	"sources": [
 																		{
 																			"fileName": "spec/gotrue.d.ts",
-																			"line": 10,
+																			"line": 14,
 																			"character": 14
 																		}
 																	],
@@ -928,7 +934,7 @@
 																	"sources": [
 																		{
 																			"fileName": "spec/gotrue.d.ts",
-																			"line": 12,
+																			"line": 16,
 																			"character": 14
 																		}
 																	],
@@ -953,17 +959,31 @@
 															"sources": [
 																{
 																	"fileName": "spec/gotrue.d.ts",
-																	"line": 7,
+																	"line": 11,
 																	"character": 18
 																}
 															]
 														}
 													}
+												},
+												{
+													"id": 38,
+													"name": "somethingElse",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExported": true,
+														"isOptional": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
 												}
 											],
 											"type": {
 												"type": "reference",
-												"id": 270,
+												"id": 271,
 												"typeArguments": [
 													{
 														"type": "intrinsic",
@@ -977,7 +997,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 6,
+											"line": 10,
 											"character": 15
 										}
 									]
@@ -985,7 +1005,7 @@
 							}
 						},
 						{
-							"id": 48,
+							"id": 49,
 							"name": "user",
 							"kind": 32,
 							"kindString": "Variable",
@@ -1000,14 +1020,14 @@
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 35,
+									"line": 40,
 									"character": 12
 								}
 							],
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 49,
+									"id": 50,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -1016,7 +1036,7 @@
 									},
 									"signatures": [
 										{
-											"id": 50,
+											"id": 51,
 											"name": "__call",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -1025,7 +1045,7 @@
 											},
 											"parameters": [
 												{
-													"id": 51,
+													"id": 52,
 													"name": "jwt",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -1039,7 +1059,7 @@
 													}
 												},
 												{
-													"id": 52,
+													"id": 53,
 													"name": "password",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -1055,7 +1075,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 270,
+												"id": 271,
 												"typeArguments": [
 													{
 														"type": "reference",
@@ -1070,7 +1090,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 35,
+											"line": 40,
 											"character": 13
 										}
 									]
@@ -1091,11 +1111,11 @@
 							"title": "Variables",
 							"kind": 32,
 							"children": [
-								43,
-								38,
-								53,
+								44,
+								39,
+								54,
 								29,
-								48
+								49
 							]
 						}
 					],
@@ -1126,7 +1146,7 @@
 			]
 		},
 		{
-			"id": 57,
+			"id": 58,
 			"name": "\"postgrest.d\"",
 			"kind": 1,
 			"kindString": "Module",
@@ -1136,7 +1156,7 @@
 			"originalName": "/Users/copple/Projects/Supabase/spec/spec/postgrest.d.ts",
 			"children": [
 				{
-					"id": 58,
+					"id": 59,
 					"name": "\"supabase-js\"",
 					"kind": 1,
 					"kindString": "Module",
@@ -1146,7 +1166,7 @@
 					"originalName": "\"@supabase/supabase-js\"",
 					"children": [
 						{
-							"id": 59,
+							"id": 60,
 							"name": "FilterOperator",
 							"kind": 4,
 							"kindString": "Enumeration",
@@ -1155,7 +1175,7 @@
 							},
 							"children": [
 								{
-									"id": 78,
+									"id": 79,
 									"name": "Adjacent",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1175,7 +1195,7 @@
 									"defaultValue": "\"adj\""
 								},
 								{
-									"id": 71,
+									"id": 72,
 									"name": "Contained",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1195,7 +1215,7 @@
 									"defaultValue": "\"cd\""
 								},
 								{
-									"id": 70,
+									"id": 71,
 									"name": "Contains",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1215,7 +1235,7 @@
 									"defaultValue": "\"cs\""
 								},
 								{
-									"id": 60,
+									"id": 61,
 									"name": "Equal",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1235,7 +1255,7 @@
 									"defaultValue": "\"eq\""
 								},
 								{
-									"id": 62,
+									"id": 63,
 									"name": "GreaterThan",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1255,7 +1275,7 @@
 									"defaultValue": "\"gt\""
 								},
 								{
-									"id": 64,
+									"id": 65,
 									"name": "GreaterThanOrEqual",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1275,7 +1295,7 @@
 									"defaultValue": "\"gte\""
 								},
 								{
-									"id": 67,
+									"id": 68,
 									"name": "ILike",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1295,7 +1315,7 @@
 									"defaultValue": "\"ilike\""
 								},
 								{
-									"id": 69,
+									"id": 70,
 									"name": "In",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1315,7 +1335,7 @@
 									"defaultValue": "\"in\""
 								},
 								{
-									"id": 68,
+									"id": 69,
 									"name": "Is",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1335,7 +1355,7 @@
 									"defaultValue": "\"is\""
 								},
 								{
-									"id": 63,
+									"id": 64,
 									"name": "LessThan",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1355,7 +1375,7 @@
 									"defaultValue": "\"lt\""
 								},
 								{
-									"id": 65,
+									"id": 66,
 									"name": "LessThanOrEqual",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1375,7 +1395,7 @@
 									"defaultValue": "\"lte\""
 								},
 								{
-									"id": 66,
+									"id": 67,
 									"name": "Like",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1395,7 +1415,7 @@
 									"defaultValue": "\"like\""
 								},
 								{
-									"id": 61,
+									"id": 62,
 									"name": "NotEqual",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1415,7 +1435,7 @@
 									"defaultValue": "\"neq\""
 								},
 								{
-									"id": 76,
+									"id": 77,
 									"name": "NotExtendLeft",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1435,7 +1455,7 @@
 									"defaultValue": "\"nxl\""
 								},
 								{
-									"id": 77,
+									"id": 78,
 									"name": "NotExtendRight",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1455,7 +1475,7 @@
 									"defaultValue": "\"nxr\""
 								},
 								{
-									"id": 72,
+									"id": 73,
 									"name": "OverlapsArray",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1475,7 +1495,7 @@
 									"defaultValue": "\"ova\""
 								},
 								{
-									"id": 73,
+									"id": 74,
 									"name": "OverlapsRange",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1495,7 +1515,7 @@
 									"defaultValue": "\"ovr\""
 								},
 								{
-									"id": 74,
+									"id": 75,
 									"name": "StrictlyLeft",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1515,7 +1535,7 @@
 									"defaultValue": "\"sl\""
 								},
 								{
-									"id": 75,
+									"id": 76,
 									"name": "StrictlyRight",
 									"kind": 16,
 									"kindString": "Enumeration member",
@@ -1540,25 +1560,25 @@
 									"title": "Enumeration members",
 									"kind": 16,
 									"children": [
-										78,
+										79,
+										72,
 										71,
-										70,
-										60,
-										62,
-										64,
-										67,
-										69,
-										68,
+										61,
 										63,
 										65,
+										68,
+										70,
+										69,
+										64,
 										66,
-										61,
-										76,
+										67,
+										62,
 										77,
-										72,
+										78,
 										73,
 										74,
-										75
+										75,
+										76
 									]
 								}
 							],
@@ -1571,7 +1591,7 @@
 							]
 						},
 						{
-							"id": 106,
+							"id": 107,
 							"name": "Auth",
 							"kind": 256,
 							"kindString": "Interface",
@@ -1580,7 +1600,7 @@
 							},
 							"children": [
 								{
-									"id": 112,
+									"id": 113,
 									"name": "login",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1600,7 +1620,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 113,
+											"id": 114,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
@@ -1609,7 +1629,7 @@
 											},
 											"signatures": [
 												{
-													"id": 114,
+													"id": 115,
 													"name": "__call",
 													"kind": 4096,
 													"kindString": "Call signature",
@@ -1618,7 +1638,7 @@
 													},
 													"parameters": [
 														{
-															"id": 115,
+															"id": 116,
 															"name": "email",
 															"kind": 32768,
 															"kindString": "Parameter",
@@ -1631,7 +1651,7 @@
 															}
 														},
 														{
-															"id": 116,
+															"id": 117,
 															"name": "password",
 															"kind": 32768,
 															"kindString": "Parameter",
@@ -1646,11 +1666,11 @@
 													],
 													"type": {
 														"type": "reference",
-														"id": 270,
+														"id": 271,
 														"typeArguments": [
 															{
 																"type": "reference",
-																"id": 97,
+																"id": 98,
 																"name": "SupabaseAuthResponse"
 															}
 														],
@@ -1669,7 +1689,7 @@
 									}
 								},
 								{
-									"id": 120,
+									"id": 121,
 									"name": "logout",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1689,7 +1709,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 121,
+											"id": 122,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
@@ -1698,7 +1718,7 @@
 											},
 											"signatures": [
 												{
-													"id": 122,
+													"id": 123,
 													"name": "__call",
 													"kind": 4096,
 													"kindString": "Call signature",
@@ -1707,7 +1727,7 @@
 													},
 													"type": {
 														"type": "reference",
-														"id": 270,
+														"id": 271,
 														"typeArguments": [
 															{
 																"type": "intrinsic",
@@ -1729,7 +1749,7 @@
 									}
 								},
 								{
-									"id": 107,
+									"id": 108,
 									"name": "signup",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1749,7 +1769,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 108,
+											"id": 109,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
@@ -1758,7 +1778,7 @@
 											},
 											"signatures": [
 												{
-													"id": 109,
+													"id": 110,
 													"name": "__call",
 													"kind": 4096,
 													"kindString": "Call signature",
@@ -1767,7 +1787,7 @@
 													},
 													"parameters": [
 														{
-															"id": 110,
+															"id": 111,
 															"name": "email",
 															"kind": 32768,
 															"kindString": "Parameter",
@@ -1780,7 +1800,7 @@
 															}
 														},
 														{
-															"id": 111,
+															"id": 112,
 															"name": "password",
 															"kind": 32768,
 															"kindString": "Parameter",
@@ -1795,11 +1815,11 @@
 													],
 													"type": {
 														"type": "reference",
-														"id": 270,
+														"id": 271,
 														"typeArguments": [
 															{
 																"type": "reference",
-																"id": 97,
+																"id": 98,
 																"name": "SupabaseAuthResponse"
 															}
 														],
@@ -1818,7 +1838,7 @@
 									}
 								},
 								{
-									"id": 117,
+									"id": 118,
 									"name": "user",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1838,7 +1858,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 118,
+											"id": 119,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
@@ -1847,7 +1867,7 @@
 											},
 											"signatures": [
 												{
-													"id": 119,
+													"id": 120,
 													"name": "__call",
 													"kind": 4096,
 													"kindString": "Call signature",
@@ -1856,11 +1876,11 @@
 													},
 													"type": {
 														"type": "reference",
-														"id": 270,
+														"id": 271,
 														"typeArguments": [
 															{
 																"type": "reference",
-																"id": 79,
+																"id": 80,
 																"name": "SupabaseAuthUser"
 															}
 														],
@@ -1884,10 +1904,10 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										112,
-										120,
-										107,
-										117
+										113,
+										121,
+										108,
+										118
 									]
 								}
 							],
@@ -1900,7 +1920,7 @@
 							]
 						},
 						{
-							"id": 135,
+							"id": 136,
 							"name": "PostgrestClient",
 							"kind": 256,
 							"kindString": "Interface",
@@ -1909,7 +1929,7 @@
 							},
 							"typeParameter": [
 								{
-									"id": 136,
+									"id": 137,
 									"name": "T",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -1920,7 +1940,7 @@
 							],
 							"children": [
 								{
-									"id": 270,
+									"id": 271,
 									"name": "Promise",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1941,13 +1961,13 @@
 									"extendedBy": [
 										{
 											"type": "reference",
-											"id": 135,
+											"id": 136,
 											"name": "PostgrestClient"
 										}
 									]
 								},
 								{
-									"id": 271,
+									"id": 272,
 									"name": "[Symbol.toStringTag]",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1968,12 +1988,12 @@
 									},
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 271,
+										"id": 272,
 										"name": "Promise.[Symbol.toStringTag]"
 									}
 								},
 								{
-									"id": 247,
+									"id": 248,
 									"name": "adj",
 									"kind": 2048,
 									"kindString": "Method",
@@ -1982,7 +2002,7 @@
 									},
 									"signatures": [
 										{
-											"id": 248,
+											"id": 249,
 											"name": "adj",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -1995,7 +2015,7 @@
 											},
 											"parameters": [
 												{
-													"id": 249,
+													"id": 250,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2012,7 +2032,7 @@
 													}
 												},
 												{
-													"id": 250,
+													"id": 251,
 													"name": "filterRange",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2044,7 +2064,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -2064,7 +2084,7 @@
 									]
 								},
 								{
-									"id": 263,
+									"id": 264,
 									"name": "catch",
 									"kind": 2048,
 									"kindString": "Method",
@@ -2073,7 +2093,7 @@
 									},
 									"signatures": [
 										{
-											"id": 264,
+											"id": 265,
 											"name": "catch",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -2086,7 +2106,7 @@
 											},
 											"typeParameter": [
 												{
-													"id": 265,
+													"id": 266,
 													"name": "TResult",
 													"kind": 131072,
 													"kindString": "Type parameter",
@@ -2097,7 +2117,7 @@
 											],
 											"parameters": [
 												{
-													"id": 266,
+													"id": 267,
 													"name": "onrejected",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2114,7 +2134,7 @@
 															{
 																"type": "reflection",
 																"declaration": {
-																	"id": 267,
+																	"id": 268,
 																	"name": "__type",
 																	"kind": 65536,
 																	"kindString": "Type literal",
@@ -2123,7 +2143,7 @@
 																	},
 																	"signatures": [
 																		{
-																			"id": 268,
+																			"id": 269,
 																			"name": "__call",
 																			"kind": 4096,
 																			"kindString": "Call signature",
@@ -2132,7 +2152,7 @@
 																			},
 																			"parameters": [
 																				{
-																					"id": 269,
+																					"id": 270,
 																					"name": "reason",
 																					"kind": 32768,
 																					"kindString": "Parameter",
@@ -2197,14 +2217,14 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 270,
+												"id": 271,
 												"typeArguments": [
 													{
 														"type": "union",
 														"types": [
 															{
 																"type": "reference",
-																"id": 123,
+																"id": 124,
 																"typeArguments": [
 																	{
 																		"type": "typeParameter",
@@ -2228,7 +2248,7 @@
 											},
 											"inheritedFrom": {
 												"type": "reference",
-												"id": 263,
+												"id": 264,
 												"name": "Promise.catch"
 											}
 										}
@@ -2242,12 +2262,12 @@
 									],
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 263,
+										"id": 264,
 										"name": "Promise.catch"
 									}
 								},
 								{
-									"id": 219,
+									"id": 220,
 									"name": "cd",
 									"kind": 2048,
 									"kindString": "Method",
@@ -2256,7 +2276,7 @@
 									},
 									"signatures": [
 										{
-											"id": 220,
+											"id": 221,
 											"name": "cd",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -2269,7 +2289,7 @@
 											},
 											"parameters": [
 												{
-													"id": 221,
+													"id": 222,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2286,7 +2306,7 @@
 													}
 												},
 												{
-													"id": 222,
+													"id": 223,
 													"name": "filterObject",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2327,7 +2347,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -2347,7 +2367,7 @@
 									]
 								},
 								{
-									"id": 215,
+									"id": 216,
 									"name": "cs",
 									"kind": 2048,
 									"kindString": "Method",
@@ -2356,7 +2376,7 @@
 									},
 									"signatures": [
 										{
-											"id": 216,
+											"id": 217,
 											"name": "cs",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -2369,7 +2389,7 @@
 											},
 											"parameters": [
 												{
-													"id": 217,
+													"id": 218,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2386,7 +2406,7 @@
 													}
 												},
 												{
-													"id": 218,
+													"id": 219,
 													"name": "filterObject",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2427,7 +2447,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -2447,7 +2467,7 @@
 									]
 								},
 								{
-									"id": 175,
+									"id": 176,
 									"name": "eq",
 									"kind": 2048,
 									"kindString": "Method",
@@ -2456,7 +2476,7 @@
 									},
 									"signatures": [
 										{
-											"id": 176,
+											"id": 177,
 											"name": "eq",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -2469,7 +2489,7 @@
 											},
 											"parameters": [
 												{
-													"id": 177,
+													"id": 178,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2486,7 +2506,7 @@
 													}
 												},
 												{
-													"id": 178,
+													"id": 179,
 													"name": "filterValue",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2512,7 +2532,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -2532,7 +2552,7 @@
 									]
 								},
 								{
-									"id": 156,
+									"id": 157,
 									"name": "filter",
 									"kind": 2048,
 									"kindString": "Method",
@@ -2541,7 +2561,7 @@
 									},
 									"signatures": [
 										{
-											"id": 157,
+											"id": 158,
 											"name": "filter",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -2553,7 +2573,7 @@
 											},
 											"parameters": [
 												{
-													"id": 158,
+													"id": 159,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2570,7 +2590,7 @@
 													}
 												},
 												{
-													"id": 159,
+													"id": 160,
 													"name": "operator",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2582,19 +2602,19 @@
 														"types": [
 															{
 																"type": "reference",
-																"id": 59,
+																"id": 60,
 																"name": "FilterOperator"
 															},
 															{
 																"type": "reference",
-																"id": 332,
+																"id": 333,
 																"name": "FilterOperatorString"
 															}
 														]
 													}
 												},
 												{
-													"id": 160,
+													"id": 161,
 													"name": "criteria",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2609,7 +2629,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -2629,7 +2649,7 @@
 									]
 								},
 								{
-									"id": 272,
+									"id": 273,
 									"name": "finally",
 									"kind": 2048,
 									"kindString": "Method",
@@ -2638,7 +2658,7 @@
 									},
 									"signatures": [
 										{
-											"id": 273,
+											"id": 274,
 											"name": "finally",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -2651,7 +2671,7 @@
 											},
 											"parameters": [
 												{
-													"id": 274,
+													"id": 275,
 													"name": "onfinally",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2668,7 +2688,7 @@
 															{
 																"type": "reflection",
 																"declaration": {
-																	"id": 275,
+																	"id": 276,
 																	"name": "__type",
 																	"kind": 65536,
 																	"kindString": "Type literal",
@@ -2677,7 +2697,7 @@
 																	},
 																	"signatures": [
 																		{
-																			"id": 276,
+																			"id": 277,
 																			"name": "__call",
 																			"kind": 4096,
 																			"kindString": "Call signature",
@@ -2713,11 +2733,11 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 270,
+												"id": 271,
 												"typeArguments": [
 													{
 														"type": "reference",
-														"id": 123,
+														"id": 124,
 														"typeArguments": [
 															{
 																"type": "typeParameter",
@@ -2731,7 +2751,7 @@
 											},
 											"inheritedFrom": {
 												"type": "reference",
-												"id": 272,
+												"id": 273,
 												"name": "Promise.finally"
 											}
 										}
@@ -2745,12 +2765,12 @@
 									],
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 272,
+										"id": 273,
 										"name": "Promise.finally"
 									}
 								},
 								{
-									"id": 183,
+									"id": 184,
 									"name": "gt",
 									"kind": 2048,
 									"kindString": "Method",
@@ -2759,7 +2779,7 @@
 									},
 									"signatures": [
 										{
-											"id": 184,
+											"id": 185,
 											"name": "gt",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -2772,7 +2792,7 @@
 											},
 											"parameters": [
 												{
-													"id": 185,
+													"id": 186,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2789,7 +2809,7 @@
 													}
 												},
 												{
-													"id": 186,
+													"id": 187,
 													"name": "filterValue",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2815,7 +2835,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -2835,7 +2855,7 @@
 									]
 								},
 								{
-									"id": 191,
+									"id": 192,
 									"name": "gte",
 									"kind": 2048,
 									"kindString": "Method",
@@ -2844,7 +2864,7 @@
 									},
 									"signatures": [
 										{
-											"id": 192,
+											"id": 193,
 											"name": "gte",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -2857,7 +2877,7 @@
 											},
 											"parameters": [
 												{
-													"id": 193,
+													"id": 194,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2874,7 +2894,7 @@
 													}
 												},
 												{
-													"id": 194,
+													"id": 195,
 													"name": "filterValue",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2900,7 +2920,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -2920,7 +2940,7 @@
 									]
 								},
 								{
-									"id": 203,
+									"id": 204,
 									"name": "ilike",
 									"kind": 2048,
 									"kindString": "Method",
@@ -2929,7 +2949,7 @@
 									},
 									"signatures": [
 										{
-											"id": 204,
+											"id": 205,
 											"name": "ilike",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -2942,7 +2962,7 @@
 											},
 											"parameters": [
 												{
-													"id": 205,
+													"id": 206,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2959,7 +2979,7 @@
 													}
 												},
 												{
-													"id": 206,
+													"id": 207,
 													"name": "stringPattern",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -2974,7 +2994,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -2994,7 +3014,7 @@
 									]
 								},
 								{
-									"id": 211,
+									"id": 212,
 									"name": "in",
 									"kind": 2048,
 									"kindString": "Method",
@@ -3003,7 +3023,7 @@
 									},
 									"signatures": [
 										{
-											"id": 212,
+											"id": 213,
 											"name": "in",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3016,7 +3036,7 @@
 											},
 											"parameters": [
 												{
-													"id": 213,
+													"id": 214,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3033,7 +3053,7 @@
 													}
 												},
 												{
-													"id": 214,
+													"id": 215,
 													"name": "filterArray",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3065,7 +3085,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -3085,7 +3105,7 @@
 									]
 								},
 								{
-									"id": 207,
+									"id": 208,
 									"name": "is",
 									"kind": 2048,
 									"kindString": "Method",
@@ -3094,7 +3114,7 @@
 									},
 									"signatures": [
 										{
-											"id": 208,
+											"id": 209,
 											"name": "is",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3107,7 +3127,7 @@
 											},
 											"parameters": [
 												{
-													"id": 209,
+													"id": 210,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3124,7 +3144,7 @@
 													}
 												},
 												{
-													"id": 210,
+													"id": 211,
 													"name": "filterValue",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3148,7 +3168,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -3168,7 +3188,7 @@
 									]
 								},
 								{
-									"id": 199,
+									"id": 200,
 									"name": "like",
 									"kind": 2048,
 									"kindString": "Method",
@@ -3177,7 +3197,7 @@
 									},
 									"signatures": [
 										{
-											"id": 200,
+											"id": 201,
 											"name": "like",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3190,7 +3210,7 @@
 											},
 											"parameters": [
 												{
-													"id": 201,
+													"id": 202,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3207,7 +3227,7 @@
 													}
 												},
 												{
-													"id": 202,
+													"id": 203,
 													"name": "stringPattern",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3222,7 +3242,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -3242,7 +3262,7 @@
 									]
 								},
 								{
-									"id": 139,
+									"id": 140,
 									"name": "limit",
 									"kind": 2048,
 									"kindString": "Method",
@@ -3251,7 +3271,7 @@
 									},
 									"signatures": [
 										{
-											"id": 140,
+											"id": 141,
 											"name": "limit",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3263,7 +3283,7 @@
 											},
 											"parameters": [
 												{
-													"id": 141,
+													"id": 142,
 													"name": "criteria",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3276,7 +3296,7 @@
 													}
 												},
 												{
-													"id": 142,
+													"id": 143,
 													"name": "foreignTableName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3301,7 +3321,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -3321,7 +3341,7 @@
 									]
 								},
 								{
-									"id": 187,
+									"id": 188,
 									"name": "lt",
 									"kind": 2048,
 									"kindString": "Method",
@@ -3330,7 +3350,7 @@
 									},
 									"signatures": [
 										{
-											"id": 188,
+											"id": 189,
 											"name": "lt",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3343,7 +3363,7 @@
 											},
 											"parameters": [
 												{
-													"id": 189,
+													"id": 190,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3360,7 +3380,7 @@
 													}
 												},
 												{
-													"id": 190,
+													"id": 191,
 													"name": "filterValue",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3386,7 +3406,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -3406,7 +3426,7 @@
 									]
 								},
 								{
-									"id": 195,
+									"id": 196,
 									"name": "lte",
 									"kind": 2048,
 									"kindString": "Method",
@@ -3415,7 +3435,7 @@
 									},
 									"signatures": [
 										{
-											"id": 196,
+											"id": 197,
 											"name": "lte",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3428,7 +3448,7 @@
 											},
 											"parameters": [
 												{
-													"id": 197,
+													"id": 198,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3445,7 +3465,7 @@
 													}
 												},
 												{
-													"id": 198,
+													"id": 199,
 													"name": "filterValue",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3471,7 +3491,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -3491,7 +3511,7 @@
 									]
 								},
 								{
-									"id": 169,
+									"id": 170,
 									"name": "match",
 									"kind": 2048,
 									"kindString": "Method",
@@ -3500,7 +3520,7 @@
 									},
 									"signatures": [
 										{
-											"id": 170,
+											"id": 171,
 											"name": "match",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3512,7 +3532,7 @@
 											},
 											"parameters": [
 												{
-													"id": 171,
+													"id": 172,
 													"name": "filterObject",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3522,7 +3542,7 @@
 													"type": {
 														"type": "reflection",
 														"declaration": {
-															"id": 172,
+															"id": 173,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
@@ -3531,7 +3551,7 @@
 															},
 															"indexSignature": [
 																{
-																	"id": 173,
+																	"id": 174,
 																	"name": "__index",
 																	"kind": 8192,
 																	"kindString": "Index signature",
@@ -3540,7 +3560,7 @@
 																	},
 																	"parameters": [
 																		{
-																			"id": 174,
+																			"id": 175,
 																			"name": "columnName",
 																			"kind": 32768,
 																			"kindString": "Parameter",
@@ -3583,7 +3603,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -3603,7 +3623,7 @@
 									]
 								},
 								{
-									"id": 179,
+									"id": 180,
 									"name": "neq",
 									"kind": 2048,
 									"kindString": "Method",
@@ -3612,7 +3632,7 @@
 									},
 									"signatures": [
 										{
-											"id": 180,
+											"id": 181,
 											"name": "neq",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3625,7 +3645,7 @@
 											},
 											"parameters": [
 												{
-													"id": 181,
+													"id": 182,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3642,7 +3662,7 @@
 													}
 												},
 												{
-													"id": 182,
+													"id": 183,
 													"name": "filterValue",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3668,7 +3688,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -3688,7 +3708,7 @@
 									]
 								},
 								{
-									"id": 161,
+									"id": 162,
 									"name": "not",
 									"kind": 2048,
 									"kindString": "Method",
@@ -3697,7 +3717,7 @@
 									},
 									"signatures": [
 										{
-											"id": 162,
+											"id": 163,
 											"name": "not",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3709,7 +3729,7 @@
 											},
 											"parameters": [
 												{
-													"id": 163,
+													"id": 164,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3726,7 +3746,7 @@
 													}
 												},
 												{
-													"id": 164,
+													"id": 165,
 													"name": "operator",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3735,12 +3755,12 @@
 													},
 													"type": {
 														"type": "reference",
-														"id": 59,
+														"id": 60,
 														"name": "FilterOperator"
 													}
 												},
 												{
-													"id": 165,
+													"id": 166,
 													"name": "criteria",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3766,7 +3786,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -3786,7 +3806,7 @@
 									]
 								},
 								{
-									"id": 239,
+									"id": 240,
 									"name": "nxl",
 									"kind": 2048,
 									"kindString": "Method",
@@ -3795,7 +3815,7 @@
 									},
 									"signatures": [
 										{
-											"id": 240,
+											"id": 241,
 											"name": "nxl",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3808,7 +3828,7 @@
 											},
 											"parameters": [
 												{
-													"id": 241,
+													"id": 242,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3825,7 +3845,7 @@
 													}
 												},
 												{
-													"id": 242,
+													"id": 243,
 													"name": "filterRange",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3857,7 +3877,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -3877,7 +3897,7 @@
 									]
 								},
 								{
-									"id": 243,
+									"id": 244,
 									"name": "nxr",
 									"kind": 2048,
 									"kindString": "Method",
@@ -3886,7 +3906,7 @@
 									},
 									"signatures": [
 										{
-											"id": 244,
+											"id": 245,
 											"name": "nxr",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3899,7 +3919,7 @@
 											},
 											"parameters": [
 												{
-													"id": 245,
+													"id": 246,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3916,7 +3936,7 @@
 													}
 												},
 												{
-													"id": 246,
+													"id": 247,
 													"name": "filterRange",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -3948,7 +3968,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -3968,7 +3988,7 @@
 									]
 								},
 								{
-									"id": 143,
+									"id": 144,
 									"name": "offset",
 									"kind": 2048,
 									"kindString": "Method",
@@ -3977,7 +3997,7 @@
 									},
 									"signatures": [
 										{
-											"id": 144,
+											"id": 145,
 											"name": "offset",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -3989,7 +4009,7 @@
 											},
 											"parameters": [
 												{
-													"id": 145,
+													"id": 146,
 													"name": "skipCount",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4002,7 +4022,7 @@
 													}
 												},
 												{
-													"id": 146,
+													"id": 147,
 													"name": "foreignTableName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4027,7 +4047,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -4047,7 +4067,7 @@
 									]
 								},
 								{
-									"id": 166,
+									"id": 167,
 									"name": "or",
 									"kind": 2048,
 									"kindString": "Method",
@@ -4056,7 +4076,7 @@
 									},
 									"signatures": [
 										{
-											"id": 167,
+											"id": 168,
 											"name": "or",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -4069,7 +4089,7 @@
 											},
 											"parameters": [
 												{
-													"id": 168,
+													"id": 169,
 													"name": "criteria",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4084,7 +4104,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -4104,7 +4124,7 @@
 									]
 								},
 								{
-									"id": 147,
+									"id": 148,
 									"name": "order",
 									"kind": 2048,
 									"kindString": "Method",
@@ -4113,7 +4133,7 @@
 									},
 									"signatures": [
 										{
-											"id": 148,
+											"id": 149,
 											"name": "order",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -4125,7 +4145,7 @@
 											},
 											"parameters": [
 												{
-													"id": 149,
+													"id": 150,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4142,7 +4162,7 @@
 													}
 												},
 												{
-													"id": 150,
+													"id": 151,
 													"name": "sortAscending",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4156,7 +4176,7 @@
 													}
 												},
 												{
-													"id": 151,
+													"id": 152,
 													"name": "nullsFirst",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4172,7 +4192,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -4192,7 +4212,7 @@
 									]
 								},
 								{
-									"id": 223,
+									"id": 224,
 									"name": "ova",
 									"kind": 2048,
 									"kindString": "Method",
@@ -4201,7 +4221,7 @@
 									},
 									"signatures": [
 										{
-											"id": 224,
+											"id": 225,
 											"name": "ova",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -4214,7 +4234,7 @@
 											},
 											"parameters": [
 												{
-													"id": 225,
+													"id": 226,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4231,7 +4251,7 @@
 													}
 												},
 												{
-													"id": 226,
+													"id": 227,
 													"name": "filterArray",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4263,7 +4283,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -4283,7 +4303,7 @@
 									]
 								},
 								{
-									"id": 227,
+									"id": 228,
 									"name": "ovr",
 									"kind": 2048,
 									"kindString": "Method",
@@ -4292,7 +4312,7 @@
 									},
 									"signatures": [
 										{
-											"id": 228,
+											"id": 229,
 											"name": "ovr",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -4305,7 +4325,7 @@
 											},
 											"parameters": [
 												{
-													"id": 229,
+													"id": 230,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4322,7 +4342,7 @@
 													}
 												},
 												{
-													"id": 230,
+													"id": 231,
 													"name": "filterRange",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4354,7 +4374,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -4374,7 +4394,7 @@
 									]
 								},
 								{
-									"id": 152,
+									"id": 153,
 									"name": "range",
 									"kind": 2048,
 									"kindString": "Method",
@@ -4383,7 +4403,7 @@
 									},
 									"signatures": [
 										{
-											"id": 153,
+											"id": 154,
 											"name": "range",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -4395,7 +4415,7 @@
 											},
 											"parameters": [
 												{
-													"id": 154,
+													"id": 155,
 													"name": "fromIndex",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4408,7 +4428,7 @@
 													}
 												},
 												{
-													"id": 155,
+													"id": 156,
 													"name": "toIndex",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4424,7 +4444,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -4444,7 +4464,7 @@
 									]
 								},
 								{
-									"id": 137,
+									"id": 138,
 									"name": "single",
 									"kind": 2048,
 									"kindString": "Method",
@@ -4453,7 +4473,7 @@
 									},
 									"signatures": [
 										{
-											"id": 138,
+											"id": 139,
 											"name": "single",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -4466,11 +4486,11 @@
 											},
 											"type": {
 												"type": "reference",
-												"id": 270,
+												"id": 271,
 												"typeArguments": [
 													{
 														"type": "reference",
-														"id": 129,
+														"id": 130,
 														"typeArguments": [
 															{
 																"type": "typeParameter",
@@ -4493,7 +4513,7 @@
 									]
 								},
 								{
-									"id": 231,
+									"id": 232,
 									"name": "sl",
 									"kind": 2048,
 									"kindString": "Method",
@@ -4502,7 +4522,7 @@
 									},
 									"signatures": [
 										{
-											"id": 232,
+											"id": 233,
 											"name": "sl",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -4515,7 +4535,7 @@
 											},
 											"parameters": [
 												{
-													"id": 233,
+													"id": 234,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4532,7 +4552,7 @@
 													}
 												},
 												{
-													"id": 234,
+													"id": 235,
 													"name": "filterRange",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4564,7 +4584,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -4584,7 +4604,7 @@
 									]
 								},
 								{
-									"id": 235,
+									"id": 236,
 									"name": "sr",
 									"kind": 2048,
 									"kindString": "Method",
@@ -4593,7 +4613,7 @@
 									},
 									"signatures": [
 										{
-											"id": 236,
+											"id": 237,
 											"name": "sr",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -4606,7 +4626,7 @@
 											},
 											"parameters": [
 												{
-													"id": 237,
+													"id": 238,
 													"name": "columnName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4623,7 +4643,7 @@
 													}
 												},
 												{
-													"id": 238,
+													"id": 239,
 													"name": "filterRange",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4655,7 +4675,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -4675,7 +4695,7 @@
 									]
 								},
 								{
-									"id": 251,
+									"id": 252,
 									"name": "then",
 									"kind": 2048,
 									"kindString": "Method",
@@ -4684,7 +4704,7 @@
 									},
 									"signatures": [
 										{
-											"id": 252,
+											"id": 253,
 											"name": "then",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -4697,7 +4717,7 @@
 											},
 											"typeParameter": [
 												{
-													"id": 253,
+													"id": 254,
 													"name": "TResult1",
 													"kind": 131072,
 													"kindString": "Type parameter",
@@ -4706,7 +4726,7 @@
 													}
 												},
 												{
-													"id": 254,
+													"id": 255,
 													"name": "TResult2",
 													"kind": 131072,
 													"kindString": "Type parameter",
@@ -4717,7 +4737,7 @@
 											],
 											"parameters": [
 												{
-													"id": 255,
+													"id": 256,
 													"name": "onfulfilled",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4734,7 +4754,7 @@
 															{
 																"type": "reflection",
 																"declaration": {
-																	"id": 256,
+																	"id": 257,
 																	"name": "__type",
 																	"kind": 65536,
 																	"kindString": "Type literal",
@@ -4743,7 +4763,7 @@
 																	},
 																	"signatures": [
 																		{
-																			"id": 257,
+																			"id": 258,
 																			"name": "__call",
 																			"kind": 4096,
 																			"kindString": "Call signature",
@@ -4752,7 +4772,7 @@
 																			},
 																			"parameters": [
 																				{
-																					"id": 258,
+																					"id": 259,
 																					"name": "value",
 																					"kind": 32768,
 																					"kindString": "Parameter",
@@ -4761,7 +4781,7 @@
 																					},
 																					"type": {
 																						"type": "reference",
-																						"id": 123,
+																						"id": 124,
 																						"typeArguments": [
 																							{
 																								"type": "typeParameter",
@@ -4834,7 +4854,7 @@
 													}
 												},
 												{
-													"id": 259,
+													"id": 260,
 													"name": "onrejected",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -4851,7 +4871,7 @@
 															{
 																"type": "reflection",
 																"declaration": {
-																	"id": 260,
+																	"id": 261,
 																	"name": "__type",
 																	"kind": 65536,
 																	"kindString": "Type literal",
@@ -4860,7 +4880,7 @@
 																	},
 																	"signatures": [
 																		{
-																			"id": 261,
+																			"id": 262,
 																			"name": "__call",
 																			"kind": 4096,
 																			"kindString": "Call signature",
@@ -4869,7 +4889,7 @@
 																			},
 																			"parameters": [
 																				{
-																					"id": 262,
+																					"id": 263,
 																					"name": "reason",
 																					"kind": 32768,
 																					"kindString": "Parameter",
@@ -4934,7 +4954,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 270,
+												"id": 271,
 												"typeArguments": [
 													{
 														"type": "union",
@@ -4968,7 +4988,7 @@
 											},
 											"inheritedFrom": {
 												"type": "reference",
-												"id": 251,
+												"id": 252,
 												"name": "Promise.then"
 											}
 										}
@@ -4982,7 +5002,7 @@
 									],
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 251,
+										"id": 252,
 										"name": "Promise.then"
 									}
 								}
@@ -4992,45 +5012,45 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										270,
-										271
+										271,
+										272
 									]
 								},
 								{
 									"title": "Methods",
 									"kind": 2048,
 									"children": [
-										247,
-										263,
-										219,
-										215,
-										175,
-										156,
-										272,
-										183,
-										191,
-										203,
-										211,
-										207,
-										199,
-										139,
-										187,
-										195,
-										169,
-										179,
-										161,
-										239,
-										243,
-										143,
-										166,
-										147,
-										223,
-										227,
-										152,
-										137,
-										231,
-										235,
-										251
+										248,
+										264,
+										220,
+										216,
+										176,
+										157,
+										273,
+										184,
+										192,
+										204,
+										212,
+										208,
+										200,
+										140,
+										188,
+										196,
+										170,
+										180,
+										162,
+										240,
+										244,
+										144,
+										167,
+										148,
+										224,
+										228,
+										153,
+										138,
+										232,
+										236,
+										252
 									]
 								}
 							],
@@ -5044,11 +5064,11 @@
 							"extendedTypes": [
 								{
 									"type": "reference",
-									"id": 270,
+									"id": 271,
 									"typeArguments": [
 										{
 											"type": "reference",
-											"id": 123,
+											"id": 124,
 											"typeArguments": [
 												{
 													"type": "typeParameter",
@@ -5063,7 +5083,7 @@
 							]
 						},
 						{
-							"id": 123,
+							"id": 124,
 							"name": "PostgrestResponse",
 							"kind": 256,
 							"kindString": "Interface",
@@ -5072,7 +5092,7 @@
 							},
 							"typeParameter": [
 								{
-									"id": 124,
+									"id": 125,
 									"name": "T",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -5083,7 +5103,7 @@
 							],
 							"children": [
 								{
-									"id": 125,
+									"id": 126,
 									"name": "body",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5115,7 +5135,7 @@
 									}
 								},
 								{
-									"id": 126,
+									"id": 127,
 									"name": "status",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5135,7 +5155,7 @@
 									}
 								},
 								{
-									"id": 127,
+									"id": 128,
 									"name": "statusCode",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5155,7 +5175,7 @@
 									}
 								},
 								{
-									"id": 128,
+									"id": 129,
 									"name": "statusText",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5180,10 +5200,10 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										125,
 										126,
 										127,
-										128
+										128,
+										129
 									]
 								}
 							],
@@ -5196,7 +5216,7 @@
 							]
 						},
 						{
-							"id": 129,
+							"id": 130,
 							"name": "PostgrestSingleResponse",
 							"kind": 256,
 							"kindString": "Interface",
@@ -5205,7 +5225,7 @@
 							},
 							"typeParameter": [
 								{
-									"id": 130,
+									"id": 131,
 									"name": "T",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -5216,7 +5236,7 @@
 							],
 							"children": [
 								{
-									"id": 131,
+									"id": 132,
 									"name": "body",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5245,7 +5265,7 @@
 									}
 								},
 								{
-									"id": 132,
+									"id": 133,
 									"name": "status",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5265,7 +5285,7 @@
 									}
 								},
 								{
-									"id": 133,
+									"id": 134,
 									"name": "statusCode",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5285,7 +5305,7 @@
 									}
 								},
 								{
-									"id": 134,
+									"id": 135,
 									"name": "statusText",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5310,10 +5330,10 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										131,
 										132,
 										133,
-										134
+										134,
+										135
 									]
 								}
 							],
@@ -5326,7 +5346,7 @@
 							]
 						},
 						{
-							"id": 97,
+							"id": 98,
 							"name": "SupabaseAuthResponse",
 							"kind": 256,
 							"kindString": "Interface",
@@ -5335,7 +5355,7 @@
 							},
 							"children": [
 								{
-									"id": 99,
+									"id": 100,
 									"name": "body",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5352,7 +5372,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 100,
+											"id": 101,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
@@ -5361,7 +5381,7 @@
 											},
 											"children": [
 												{
-													"id": 102,
+													"id": 103,
 													"name": "access_token",
 													"kind": 32,
 													"kindString": "Variable",
@@ -5381,7 +5401,7 @@
 													}
 												},
 												{
-													"id": 104,
+													"id": 105,
 													"name": "expires_in",
 													"kind": 32,
 													"kindString": "Variable",
@@ -5401,7 +5421,7 @@
 													}
 												},
 												{
-													"id": 103,
+													"id": 104,
 													"name": "refresh_token",
 													"kind": 32,
 													"kindString": "Variable",
@@ -5421,7 +5441,7 @@
 													}
 												},
 												{
-													"id": 105,
+													"id": 106,
 													"name": "unauthorized",
 													"kind": 32,
 													"kindString": "Variable",
@@ -5441,7 +5461,7 @@
 													}
 												},
 												{
-													"id": 101,
+													"id": 102,
 													"name": "user",
 													"kind": 32,
 													"kindString": "Variable",
@@ -5457,7 +5477,7 @@
 													],
 													"type": {
 														"type": "reference",
-														"id": 79,
+														"id": 80,
 														"name": "SupabaseAuthUser"
 													}
 												}
@@ -5467,11 +5487,11 @@
 													"title": "Variables",
 													"kind": 32,
 													"children": [
-														102,
-														104,
 														103,
 														105,
-														101
+														104,
+														106,
+														102
 													]
 												}
 											],
@@ -5486,7 +5506,7 @@
 									}
 								},
 								{
-									"id": 98,
+									"id": 99,
 									"name": "status",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5511,8 +5531,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										99,
-										98
+										100,
+										99
 									]
 								}
 							],
@@ -5525,7 +5545,7 @@
 							]
 						},
 						{
-							"id": 79,
+							"id": 80,
 							"name": "SupabaseAuthUser",
 							"kind": 256,
 							"kindString": "Interface",
@@ -5534,7 +5554,7 @@
 							},
 							"children": [
 								{
-									"id": 80,
+									"id": 81,
 									"name": "app_metadata",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5551,7 +5571,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 81,
+											"id": 82,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
@@ -5560,7 +5580,7 @@
 											},
 											"indexSignature": [
 												{
-													"id": 83,
+													"id": 84,
 													"name": "__index",
 													"kind": 8192,
 													"kindString": "Index signature",
@@ -5569,7 +5589,7 @@
 													},
 													"parameters": [
 														{
-															"id": 84,
+															"id": 85,
 															"name": "key",
 															"kind": 32768,
 															"kindString": "Parameter",
@@ -5590,7 +5610,7 @@
 											],
 											"children": [
 												{
-													"id": 82,
+													"id": 83,
 													"name": "provider",
 													"kind": 32,
 													"kindString": "Variable",
@@ -5616,7 +5636,7 @@
 													"title": "Variables",
 													"kind": 32,
 													"children": [
-														82
+														83
 													]
 												}
 											],
@@ -5631,7 +5651,7 @@
 									}
 								},
 								{
-									"id": 89,
+									"id": 90,
 									"name": "aud",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5651,7 +5671,7 @@
 									}
 								},
 								{
-									"id": 91,
+									"id": 92,
 									"name": "confirmed_at",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5671,7 +5691,7 @@
 									}
 								},
 								{
-									"id": 90,
+									"id": 91,
 									"name": "created_at",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5691,7 +5711,7 @@
 									}
 								},
 								{
-									"id": 92,
+									"id": 93,
 									"name": "email",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5711,7 +5731,7 @@
 									}
 								},
 								{
-									"id": 93,
+									"id": 94,
 									"name": "id",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5731,7 +5751,7 @@
 									}
 								},
 								{
-									"id": 94,
+									"id": 95,
 									"name": "last_sign_in_at",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5751,7 +5771,7 @@
 									}
 								},
 								{
-									"id": 95,
+									"id": 96,
 									"name": "role",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5771,7 +5791,7 @@
 									}
 								},
 								{
-									"id": 96,
+									"id": 97,
 									"name": "updated_at",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5791,7 +5811,7 @@
 									}
 								},
 								{
-									"id": 85,
+									"id": 86,
 									"name": "user_metadata",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5808,7 +5828,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 86,
+											"id": 87,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
@@ -5817,7 +5837,7 @@
 											},
 											"indexSignature": [
 												{
-													"id": 87,
+													"id": 88,
 													"name": "__index",
 													"kind": 8192,
 													"kindString": "Index signature",
@@ -5826,7 +5846,7 @@
 													},
 													"parameters": [
 														{
-															"id": 88,
+															"id": 89,
 															"name": "key",
 															"kind": 32768,
 															"kindString": "Parameter",
@@ -5861,16 +5881,16 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										80,
-										89,
-										91,
+										81,
 										90,
 										92,
+										91,
 										93,
 										94,
 										95,
 										96,
-										85
+										97,
+										86
 									]
 								}
 							],
@@ -5883,7 +5903,7 @@
 							]
 						},
 						{
-							"id": 316,
+							"id": 317,
 							"name": "SupabaseClient",
 							"kind": 256,
 							"kindString": "Interface",
@@ -5892,7 +5912,7 @@
 							},
 							"children": [
 								{
-									"id": 317,
+									"id": 318,
 									"name": "auth",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5911,12 +5931,12 @@
 									],
 									"type": {
 										"type": "reference",
-										"id": 106,
+										"id": 107,
 										"name": "Auth"
 									}
 								},
 								{
-									"id": 318,
+									"id": 319,
 									"name": "from",
 									"kind": 2048,
 									"kindString": "Method",
@@ -5925,7 +5945,7 @@
 									},
 									"signatures": [
 										{
-											"id": 319,
+											"id": 320,
 											"name": "from",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -5937,7 +5957,7 @@
 											},
 											"typeParameter": [
 												{
-													"id": 320,
+													"id": 321,
 													"name": "T",
 													"kind": 131072,
 													"kindString": "Type parameter",
@@ -5948,7 +5968,7 @@
 											],
 											"parameters": [
 												{
-													"id": 321,
+													"id": 322,
 													"name": "tableName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -5963,7 +5983,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 293,
+												"id": 294,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -5983,7 +6003,7 @@
 									]
 								},
 								{
-									"id": 330,
+									"id": 331,
 									"name": "getSubscriptions",
 									"kind": 2048,
 									"kindString": "Method",
@@ -5992,7 +6012,7 @@
 									},
 									"signatures": [
 										{
-											"id": 331,
+											"id": 332,
 											"name": "getSubscriptions",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -6006,7 +6026,7 @@
 												"type": "array",
 												"elementType": {
 													"type": "reference",
-													"id": 277,
+													"id": 278,
 													"name": "SupabaseRealtimeClient"
 												}
 											}
@@ -6021,7 +6041,7 @@
 									]
 								},
 								{
-									"id": 327,
+									"id": 328,
 									"name": "removeSubscription",
 									"kind": 2048,
 									"kindString": "Method",
@@ -6030,7 +6050,7 @@
 									},
 									"signatures": [
 										{
-											"id": 328,
+											"id": 329,
 											"name": "removeSubscription",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -6042,7 +6062,7 @@
 											},
 											"parameters": [
 												{
-													"id": 329,
+													"id": 330,
 													"name": "reference",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -6051,7 +6071,7 @@
 													},
 													"type": {
 														"type": "reference",
-														"id": 277,
+														"id": 278,
 														"name": "SupabaseRealtimeClient"
 													}
 												}
@@ -6071,7 +6091,7 @@
 									]
 								},
 								{
-									"id": 322,
+									"id": 323,
 									"name": "rpc",
 									"kind": 2048,
 									"kindString": "Method",
@@ -6080,7 +6100,7 @@
 									},
 									"signatures": [
 										{
-											"id": 323,
+											"id": 324,
 											"name": "rpc",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -6092,7 +6112,7 @@
 											},
 											"typeParameter": [
 												{
-													"id": 324,
+													"id": 325,
 													"name": "T",
 													"kind": 131072,
 													"kindString": "Type parameter",
@@ -6103,7 +6123,7 @@
 											],
 											"parameters": [
 												{
-													"id": 325,
+													"id": 326,
 													"name": "functionName",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -6116,7 +6136,7 @@
 													}
 												},
 												{
-													"id": 326,
+													"id": 327,
 													"name": "functionParameters",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -6144,7 +6164,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -6169,17 +6189,17 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										317
+										318
 									]
 								},
 								{
 									"title": "Methods",
 									"kind": 2048,
 									"children": [
-										318,
-										330,
-										327,
-										322
+										319,
+										331,
+										328,
+										323
 									]
 								}
 							],
@@ -6192,7 +6212,7 @@
 							]
 						},
 						{
-							"id": 293,
+							"id": 294,
 							"name": "SupabaseQueryClient",
 							"kind": 256,
 							"kindString": "Interface",
@@ -6201,7 +6221,7 @@
 							},
 							"typeParameter": [
 								{
-									"id": 294,
+									"id": 295,
 									"name": "T",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -6212,7 +6232,7 @@
 							],
 							"children": [
 								{
-									"id": 307,
+									"id": 308,
 									"name": "delete",
 									"kind": 2048,
 									"kindString": "Method",
@@ -6221,7 +6241,7 @@
 									},
 									"signatures": [
 										{
-											"id": 308,
+											"id": 309,
 											"name": "delete",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -6234,7 +6254,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -6254,7 +6274,7 @@
 									]
 								},
 								{
-									"id": 298,
+									"id": 299,
 									"name": "insert",
 									"kind": 2048,
 									"kindString": "Method",
@@ -6263,7 +6283,7 @@
 									},
 									"signatures": [
 										{
-											"id": 299,
+											"id": 300,
 											"name": "insert",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -6275,7 +6295,7 @@
 											},
 											"parameters": [
 												{
-													"id": 300,
+													"id": 301,
 													"name": "data",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -6300,7 +6320,7 @@
 													}
 												},
 												{
-													"id": 301,
+													"id": 302,
 													"name": "options",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -6311,7 +6331,7 @@
 													"type": {
 														"type": "reflection",
 														"declaration": {
-															"id": 302,
+															"id": 303,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
@@ -6320,7 +6340,7 @@
 															},
 															"children": [
 																{
-																	"id": 303,
+																	"id": 304,
 																	"name": "upsert",
 																	"kind": 32,
 																	"kindString": "Variable",
@@ -6346,7 +6366,7 @@
 																	"title": "Variables",
 																	"kind": 32,
 																	"children": [
-																		303
+																		304
 																	]
 																}
 															],
@@ -6363,7 +6383,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -6383,7 +6403,7 @@
 									]
 								},
 								{
-									"id": 309,
+									"id": 310,
 									"name": "on",
 									"kind": 2048,
 									"kindString": "Method",
@@ -6392,7 +6412,7 @@
 									},
 									"signatures": [
 										{
-											"id": 310,
+											"id": 311,
 											"name": "on",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -6404,7 +6424,7 @@
 											},
 											"parameters": [
 												{
-													"id": 311,
+													"id": 312,
 													"name": "eventType",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -6434,7 +6454,7 @@
 													}
 												},
 												{
-													"id": 312,
+													"id": 313,
 													"name": "callbackFunction",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -6444,7 +6464,7 @@
 													"type": {
 														"type": "reflection",
 														"declaration": {
-															"id": 313,
+															"id": 314,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
@@ -6453,7 +6473,7 @@
 															},
 															"signatures": [
 																{
-																	"id": 314,
+																	"id": 315,
 																	"name": "__call",
 																	"kind": 4096,
 																	"kindString": "Call signature",
@@ -6462,7 +6482,7 @@
 																	},
 																	"parameters": [
 																		{
-																			"id": 315,
+																			"id": 316,
 																			"name": "payload",
 																			"kind": 32768,
 																			"kindString": "Parameter",
@@ -6471,7 +6491,7 @@
 																			},
 																			"type": {
 																				"type": "reference",
-																				"id": 285,
+																				"id": 286,
 																				"typeArguments": [
 																					{
 																						"type": "typeParameter",
@@ -6501,7 +6521,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 277,
+												"id": 278,
 												"name": "SupabaseRealtimeClient"
 											}
 										}
@@ -6515,7 +6535,7 @@
 									]
 								},
 								{
-									"id": 295,
+									"id": 296,
 									"name": "select",
 									"kind": 2048,
 									"kindString": "Method",
@@ -6524,7 +6544,7 @@
 									},
 									"signatures": [
 										{
-											"id": 296,
+											"id": 297,
 											"name": "select",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -6536,7 +6556,7 @@
 											},
 											"parameters": [
 												{
-													"id": 297,
+													"id": 298,
 													"name": "columnQuery",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -6552,7 +6572,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -6572,7 +6592,7 @@
 									]
 								},
 								{
-									"id": 304,
+									"id": 305,
 									"name": "update",
 									"kind": 2048,
 									"kindString": "Method",
@@ -6581,7 +6601,7 @@
 									},
 									"signatures": [
 										{
-											"id": 305,
+											"id": 306,
 											"name": "update",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -6594,7 +6614,7 @@
 											},
 											"parameters": [
 												{
-													"id": 306,
+													"id": 307,
 													"name": "data",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -6609,7 +6629,7 @@
 											],
 											"type": {
 												"type": "reference",
-												"id": 135,
+												"id": 136,
 												"typeArguments": [
 													{
 														"type": "typeParameter",
@@ -6634,11 +6654,11 @@
 									"title": "Methods",
 									"kind": 2048,
 									"children": [
-										307,
-										298,
-										309,
-										295,
-										304
+										308,
+										299,
+										310,
+										296,
+										305
 									]
 								}
 							],
@@ -6651,7 +6671,7 @@
 							]
 						},
 						{
-							"id": 277,
+							"id": 278,
 							"name": "SupabaseRealtimeClient",
 							"kind": 256,
 							"kindString": "Interface",
@@ -6660,7 +6680,7 @@
 							},
 							"children": [
 								{
-									"id": 282,
+									"id": 283,
 									"name": "schema",
 									"kind": 1024,
 									"kindString": "Property",
@@ -6680,7 +6700,7 @@
 									}
 								},
 								{
-									"id": 283,
+									"id": 284,
 									"name": "tableName",
 									"kind": 1024,
 									"kindString": "Property",
@@ -6700,7 +6720,7 @@
 									}
 								},
 								{
-									"id": 284,
+									"id": 285,
 									"name": "uuid",
 									"kind": 1024,
 									"kindString": "Property",
@@ -6720,7 +6740,7 @@
 									}
 								},
 								{
-									"id": 278,
+									"id": 279,
 									"name": "subscribe",
 									"kind": 2048,
 									"kindString": "Method",
@@ -6729,7 +6749,7 @@
 									},
 									"signatures": [
 										{
-											"id": 279,
+											"id": 280,
 											"name": "subscribe",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -6742,7 +6762,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"id": 277,
+												"id": 278,
 												"name": "SupabaseRealtimeClient"
 											}
 										}
@@ -6756,7 +6776,7 @@
 									]
 								},
 								{
-									"id": 280,
+									"id": 281,
 									"name": "unsubscribe",
 									"kind": 2048,
 									"kindString": "Method",
@@ -6765,7 +6785,7 @@
 									},
 									"signatures": [
 										{
-											"id": 281,
+											"id": 282,
 											"name": "unsubscribe",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -6777,7 +6797,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"id": 277,
+												"id": 278,
 												"name": "SupabaseRealtimeClient"
 											}
 										}
@@ -6796,17 +6816,17 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										282,
 										283,
-										284
+										284,
+										285
 									]
 								},
 								{
 									"title": "Methods",
 									"kind": 2048,
 									"children": [
-										278,
-										280
+										279,
+										281
 									]
 								}
 							],
@@ -6819,7 +6839,7 @@
 							]
 						},
 						{
-							"id": 285,
+							"id": 286,
 							"name": "SupabaseRealtimePayload",
 							"kind": 256,
 							"kindString": "Interface",
@@ -6828,7 +6848,7 @@
 							},
 							"typeParameter": [
 								{
-									"id": 286,
+									"id": 287,
 									"name": "T",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -6839,7 +6859,7 @@
 							],
 							"children": [
 								{
-									"id": 287,
+									"id": 288,
 									"name": "commit_timestamp",
 									"kind": 1024,
 									"kindString": "Property",
@@ -6859,7 +6879,7 @@
 									}
 								},
 								{
-									"id": 288,
+									"id": 289,
 									"name": "eventType",
 									"kind": 1024,
 									"kindString": "Property",
@@ -6892,7 +6912,7 @@
 									}
 								},
 								{
-									"id": 289,
+									"id": 290,
 									"name": "new",
 									"kind": 1024,
 									"kindString": "Property",
@@ -6915,7 +6935,7 @@
 									}
 								},
 								{
-									"id": 290,
+									"id": 291,
 									"name": "old",
 									"kind": 1024,
 									"kindString": "Property",
@@ -6938,7 +6958,7 @@
 									}
 								},
 								{
-									"id": 291,
+									"id": 292,
 									"name": "schema",
 									"kind": 1024,
 									"kindString": "Property",
@@ -6958,7 +6978,7 @@
 									}
 								},
 								{
-									"id": 292,
+									"id": 293,
 									"name": "table",
 									"kind": 1024,
 									"kindString": "Property",
@@ -6983,12 +7003,12 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										287,
 										288,
 										289,
 										290,
 										291,
-										292
+										292,
+										293
 									]
 								}
 							],
@@ -7001,7 +7021,7 @@
 							]
 						},
 						{
-							"id": 332,
+							"id": 333,
 							"name": "FilterOperatorString",
 							"kind": 4194304,
 							"kindString": "Type alias",
@@ -7098,7 +7118,7 @@
 							}
 						},
 						{
-							"id": 333,
+							"id": 334,
 							"name": "createClient",
 							"kind": 64,
 							"kindString": "Function",
@@ -7107,7 +7127,7 @@
 							},
 							"signatures": [
 								{
-									"id": 334,
+									"id": 335,
 									"name": "createClient",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -7119,7 +7139,7 @@
 									},
 									"parameters": [
 										{
-											"id": 335,
+											"id": 336,
 											"name": "supabaseUrl",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7132,7 +7152,7 @@
 											}
 										},
 										{
-											"id": 336,
+											"id": 337,
 											"name": "supabaseKey",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7145,7 +7165,7 @@
 											}
 										},
 										{
-											"id": 337,
+											"id": 338,
 											"name": "options",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7156,7 +7176,7 @@
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 338,
+													"id": 339,
 													"name": "__type",
 													"kind": 65536,
 													"kindString": "Type literal",
@@ -7165,7 +7185,7 @@
 													},
 													"children": [
 														{
-															"id": 339,
+															"id": 340,
 															"name": "autoRefreshToken",
 															"kind": 32,
 															"kindString": "Variable",
@@ -7186,7 +7206,7 @@
 															}
 														},
 														{
-															"id": 340,
+															"id": 341,
 															"name": "schema",
 															"kind": 32,
 															"kindString": "Variable",
@@ -7214,8 +7234,8 @@
 															"title": "Variables",
 															"kind": 32,
 															"children": [
-																339,
-																340
+																340,
+																341
 															]
 														}
 													],
@@ -7232,7 +7252,7 @@
 									],
 									"type": {
 										"type": "reference",
-										"id": 316,
+										"id": 317,
 										"name": "SupabaseClient"
 									}
 								}
@@ -7251,37 +7271,37 @@
 							"title": "Enumerations",
 							"kind": 4,
 							"children": [
-								59
+								60
 							]
 						},
 						{
 							"title": "Interfaces",
 							"kind": 256,
 							"children": [
-								106,
-								135,
-								123,
-								129,
-								97,
-								79,
-								316,
-								293,
-								277,
-								285
+								107,
+								136,
+								124,
+								130,
+								98,
+								80,
+								317,
+								294,
+								278,
+								286
 							]
 						},
 						{
 							"title": "Type aliases",
 							"kind": 4194304,
 							"children": [
-								332
+								333
 							]
 						},
 						{
 							"title": "Functions",
 							"kind": 64,
 							"children": [
-								333
+								334
 							]
 						}
 					],
@@ -7299,7 +7319,7 @@
 					"title": "Modules",
 					"kind": 1,
 					"children": [
-						58
+						59
 					]
 				}
 			],
@@ -7318,7 +7338,7 @@
 			"kind": 1,
 			"children": [
 				1,
-				57
+				58
 			]
 		}
 	]
