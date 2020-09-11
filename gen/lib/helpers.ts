@@ -1,3 +1,6 @@
+
+const fs = require('fs')
+
 export const slugify = (text) => {
   return text
     .toString()
@@ -9,9 +12,18 @@ export const slugify = (text) => {
     .replace(/-+$/, '') // Trim - from end of text
 }
 
-export const tsCommentToMarkdown = (commentObject: { shortText?: string; text?: string }) =>
+export const tsDocCommentToMarkdown = (commentObject: { shortText?: string; text?: string }) =>
   `
 ${commentObject?.shortText || ''}
 
 ${commentObject?.text || ''}
 `.trim()
+
+export const writeToDisk = (fileName: string, content: any) => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile(fileName, content, (err) => {
+      if (err) return reject(err)
+      else return resolve(true)
+    })
+  })
+} 

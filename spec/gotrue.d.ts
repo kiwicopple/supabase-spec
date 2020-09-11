@@ -1,11 +1,9 @@
 declare module '@supabase/gotrue-js' {
   /**
    * Some signup details
+   * @param {object} signupOptions The signup options look like this
    */
   const signup: (
-    /**
-     * Some signup details
-     */
     signupOptions: {
       /** The email of the user which is signing up */
       email: string

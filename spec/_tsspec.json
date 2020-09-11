@@ -45,7 +45,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 49,
+											"line": 47,
 											"character": 8
 										}
 									],
@@ -78,7 +78,7 @@
 											"sources": [
 												{
 													"fileName": "spec/gotrue.d.ts",
-													"line": 49,
+													"line": 47,
 													"character": 9
 												}
 											]
@@ -96,7 +96,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 47,
+											"line": 45,
 											"character": 7
 										}
 									],
@@ -116,7 +116,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 48,
+											"line": 46,
 											"character": 10
 										}
 									],
@@ -148,7 +148,7 @@
 											"sources": [
 												{
 													"fileName": "spec/gotrue.d.ts",
-													"line": 48,
+													"line": 46,
 													"character": 11
 												}
 											]
@@ -170,7 +170,7 @@
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 46,
+									"line": 44,
 									"character": 24
 								}
 							]
@@ -198,7 +198,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 54,
+											"line": 52,
 											"character": 16
 										}
 									],
@@ -255,7 +255,7 @@
 													"sources": [
 														{
 															"fileName": "spec/gotrue.d.ts",
-															"line": 55,
+															"line": 53,
 															"character": 14
 														}
 													],
@@ -277,7 +277,7 @@
 											"sources": [
 												{
 													"fileName": "spec/gotrue.d.ts",
-													"line": 54,
+													"line": 52,
 													"character": 17
 												}
 											]
@@ -295,7 +295,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 62,
+											"line": 60,
 											"character": 7
 										}
 									],
@@ -315,7 +315,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 64,
+											"line": 62,
 											"character": 16
 										}
 									],
@@ -335,7 +335,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 63,
+											"line": 61,
 											"character": 14
 										}
 									],
@@ -355,7 +355,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 65,
+											"line": 63,
 											"character": 9
 										}
 									],
@@ -375,7 +375,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 66,
+											"line": 64,
 											"character": 6
 										}
 									],
@@ -395,7 +395,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 67,
+											"line": 65,
 											"character": 19
 										}
 									],
@@ -415,7 +415,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 68,
+											"line": 66,
 											"character": 8
 										}
 									],
@@ -435,7 +435,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 69,
+											"line": 67,
 											"character": 14
 										}
 									],
@@ -458,7 +458,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 59,
+											"line": 57,
 											"character": 17
 										}
 									],
@@ -505,7 +505,7 @@
 											"sources": [
 												{
 													"fileName": "spec/gotrue.d.ts",
-													"line": 59,
+													"line": 57,
 													"character": 18
 												}
 											]
@@ -534,7 +534,7 @@
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 52,
+									"line": 50,
 									"character": 20
 								}
 							]
@@ -555,7 +555,7 @@
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 30,
+									"line": 28,
 									"character": 22
 								}
 							],
@@ -622,7 +622,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 30,
+											"line": 28,
 											"character": 23
 										}
 									]
@@ -645,7 +645,7 @@
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 23,
+									"line": 21,
 									"character": 13
 								}
 							],
@@ -712,7 +712,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 23,
+											"line": 21,
 											"character": 14
 										}
 									]
@@ -735,7 +735,7 @@
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 44,
+									"line": 42,
 									"character": 25
 								}
 							],
@@ -782,7 +782,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 44,
+											"line": 42,
 											"character": 26
 										}
 									]
@@ -799,12 +799,19 @@
 								"isConst": true
 							},
 							"comment": {
-								"shortText": "Some signup details"
+								"shortText": "Some signup details",
+								"tags": [
+									{
+										"tag": "param",
+										"text": "The signup options look like this\n",
+										"param": "signupOptions"
+									}
+								]
 							},
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 5,
+									"line": 6,
 									"character": 14
 								}
 							],
@@ -858,7 +865,7 @@
 																	"sources": [
 																		{
 																			"fileName": "spec/gotrue.d.ts",
-																			"line": 13,
+																			"line": 11,
 																			"character": 18
 																		}
 																	],
@@ -881,7 +888,7 @@
 																	"sources": [
 																		{
 																			"fileName": "spec/gotrue.d.ts",
-																			"line": 11,
+																			"line": 9,
 																			"character": 11
 																		}
 																	],
@@ -901,7 +908,7 @@
 																	"sources": [
 																		{
 																			"fileName": "spec/gotrue.d.ts",
-																			"line": 12,
+																			"line": 10,
 																			"character": 14
 																		}
 																	],
@@ -921,7 +928,7 @@
 																	"sources": [
 																		{
 																			"fileName": "spec/gotrue.d.ts",
-																			"line": 14,
+																			"line": 12,
 																			"character": 14
 																		}
 																	],
@@ -946,7 +953,7 @@
 															"sources": [
 																{
 																	"fileName": "spec/gotrue.d.ts",
-																	"line": 9,
+																	"line": 7,
 																	"character": 18
 																}
 															]
@@ -970,7 +977,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 5,
+											"line": 6,
 											"character": 15
 										}
 									]
@@ -993,7 +1000,7 @@
 							"sources": [
 								{
 									"fileName": "spec/gotrue.d.ts",
-									"line": 37,
+									"line": 35,
 									"character": 12
 								}
 							],
@@ -1063,7 +1070,7 @@
 									"sources": [
 										{
 											"fileName": "spec/gotrue.d.ts",
-											"line": 37,
+											"line": 35,
 											"character": 13
 										}
 									]
