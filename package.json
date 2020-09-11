@@ -9,8 +9,8 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
-    "gen:gotrue": "ts-node docGen.ts -o ref/gotrue spec/gotrue.yml",
-    "gen:postgrest": "ts-node docGen.ts -o ref/postgrest spec/postgrest.yml",
+    "gen:gotrue": "npm run ts:spec && ts-node docGen.ts -o ref/gotrue spec/gotrue.yml",
+    "gen:postgrest": "npm run ts:spec && ts-node docGen.ts -o ref/postgrest spec/postgrest.yml",
     "ts:spec": "typedoc --json spec/_tsspec.json --mode modules --tsconfig tdconfig.json --includeDeclarations --excludeExternals"
   },
   "dependencies": {

@@ -1,4 +1,7 @@
 declare module '@supabase/gotrue-js' {
+  /**
+   * Some signup details
+   */
   const signup: (
     /**
      * Some signup details
