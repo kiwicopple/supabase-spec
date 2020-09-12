@@ -40,14 +40,14 @@
   --custom-content-color-emphasis: #000;
   --custom-border-color: #e0e0e0;
   --custom-color-subtle: #ccc;
-  --custom-color-orange-100: #FDF0EA;
-  --custom-color-orange-200: #FBE2D5;
-  --custom-color-orange-300: #F9D3C0;
-  --custom-color-orange-400: #F5B796;
-  --custom-color-orange-500: #F08B57;
-  --custom-color-orange-600: #EC6E2D;
-  --custom-color-orange-700: #D75614;
-  --custom-color-orange-800: #A93C04;
+  --custom-color-orange-100: #fdf0ea;
+  --custom-color-orange-200: #fbe2d5;
+  --custom-color-orange-300: #f9d3c0;
+  --custom-color-orange-400: #f5b796;
+  --custom-color-orange-500: #f08b57;
+  --custom-color-orange-600: #ec6e2d;
+  --custom-color-orange-700: #d75614;
+  --custom-color-orange-800: #a93c04;
   --custom-shadow-lw: 0 3px 5px 0px rgba(0, 0, 0, 0.1);
   --custom-shadow-md: 0 3px 5px 0px rgba(0, 0, 0, 0.1);
   --custom-shadow-tl: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -241,13 +241,15 @@ blockquote p {
   color: var(--custom-content-color);
 }
 
-div[class^="announcementBar"] , div[class*=" announcementBar"] {
-    padding-bottom: 5px;
+div[class^='announcementBar'],
+div[class*=' announcementBar'] {
+  padding-bottom: 5px;
 }
-div[class^="announcementBar"] button span, div[class*=" announcementBar"] button span {
-    color: #fff !important;
-    padding-bottom: 5px;
-    display: inline-block;
+div[class^='announcementBar'] button span,
+div[class*=' announcementBar'] button span {
+  color: #fff !important;
+  padding-bottom: 5px;
+  display: inline-block;
 }
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
@@ -367,7 +369,7 @@ article header {
 .navbar-sidebar__items .menu .menu__link.menu__link--sublist::after {
   display: none;
 }
-.navbar-sidebar__items .menu .menu__list-item .menu__list-item a.menu__link{
+.navbar-sidebar__items .menu .menu__list-item .menu__list-item a.menu__link {
   margin-left: 30px;
 }
 
@@ -486,14 +488,13 @@ a.card:hover {
   vertical-align: middle;
 }
 
-
 /* Make the Docs page take up full height to fix the left sidebar */
 div.container.padding-vert--lg .row {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 /* Disable full height for child rows */
 div.container.padding-vert--lg .row .row {
-    min-height: auto;
+  min-height: auto;
 }
 div[class^='docItemContainer_'] {
   max-width: none;
@@ -561,7 +562,9 @@ div[class^='sidebar_'] .menu__link.menu__link--active:not(.menu__link--sublist) 
   cursor: pointer;
 }
 
-div[class^="codeBlockContent"] , div[class*=" codeBlockContent"], .prism-code {
+div[class^='codeBlockContent'],
+div[class*=' codeBlockContent'],
+.prism-code {
   background-color: var(--ifm-code-background-dark) !important;
 }
 .code-with-header {
@@ -786,7 +789,6 @@ a.hash-link {
   line-height: 10px;
 }
 
-
 .prism-code {
   background-color: none;
   white-space: normal;
@@ -837,4 +839,55 @@ a.hash-link {
 .token.boolean,
 .token.doc-comment.class-name {
   @apply text-green-500;
+}
+
+.method-list-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.method-list-group li {
+  border-top: 1px solid var(--custom-border-color);
+  padding-top: 12px;
+}
+.method-list-group li:last-child {
+  border-bottom: 1px solid var(--custom-border-color);
+}
+
+h4.method-list-item-label .method-list-item-label-name {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+}
+h4.method-list-item-label .method-list-item-label-badge {
+  padding: 0 5px;
+  font-weight: 300;
+}
+h4.method-list-item-label .method-list-item-validation {
+  padding: 0 5px;
+  font-weight: 300;
+}
+
+
+.method-list-group .method-list-group {
+  border: 1px solid var(--custom-border-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+.method-list-group .method-list-group li {
+  padding: 12px;
+  border-bottom: none;
+}
+.method-list-title {
+  margin: 0;
+  padding: 6px 12px;
+}
+.method-list-group .method-list-group li div, 
+.method-list-group .method-list-group li h4, 
+.method-list-group .method-list-group li p {
+  padding: 0;
+  margin: 0;
+}
+.method-list-group .method-list-group li h4 {
+  margin-bottom: 4px;
 }

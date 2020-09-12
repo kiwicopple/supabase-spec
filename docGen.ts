@@ -88,16 +88,55 @@ function generateParameters(tsDefinition: any) {
   if (!paramDefinitions) return ''
 
   // const paramsComments: TsDoc.CommentTag = tsDefinition.comment?.tags?.filter(x => x.tag == 'param')
-  let parameters = `<ul>${paramDefinitions.map((x) => recurseThroughParams(x)).join(`\n`)}</ul>`
-  return parameters
+  let parameters = paramDefinitions.map((x) => recurseThroughParams(x)).join(`\n`)
+  return methodListGroup(parameters)
 }
 
 function recurseThroughParams(paramDefinition: TsDoc.TypeDefinition) {
   let children = paramDefinition.type?.declaration?.children
-  let subContent =
-    !!children && `\n<ul>${children.map((x) => recurseThroughParams(x)).join('\n')}</ul>`
-  return `\n\<li>\n${paramDefinition.name} ${subContent ? subContent : ''}\n</li>\n`
+  const labelParams = {
+    name: paramDefinition.name,
+    isOptional: !!paramDefinition.flags.isOptional,
+    type: paramDefinition.type.name || 'object',
+  }
+  let subContent = ''
+  
+  if (!!children) {
+    let properties = children.map((x) => recurseThroughParams(x))
+    let heading = `<h5 class="method-list-title method-list-title-isChild expanded">Properties</h5>`
+    subContent = methodListGroup([heading].concat(properties).join('\n'))
+  }
+
+  return methodListItemLabel(labelParams, subContent)
 }
+
+const methodListGroup = (items) => `
+<ul className="method-list-group">
+  ${items}
+</ul>
+`
+
+const methodListItemLabel = ({ name, isOptional, type }, subContent) => `
+<li className="method-list-item">
+  <h4 className="method-list-item-label">
+    <span className="method-list-item-label-name">
+      ${name}
+    </span>
+    <span className="method-list-item-label-badge ${!isOptional && 'required'}">
+      ${isOptional ? 'optional' : 'required'}
+    </span>
+    <span className="method-list-item-validation">
+      ${type}
+    </span>
+  </h4>
+  <div class="method-list-item-description">
+
+No description provided. [Contribute?](https://supabase.io)
+  
+  </div>
+  ${subContent}
+</li>
+`
 
 function generateExamples(specExamples: any, allLanguages: any) {
   return specExamples.map((example) => {
