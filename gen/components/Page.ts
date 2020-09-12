@@ -5,7 +5,8 @@ type PageParmas = {
   description?: string
   parameters?: string
   examples?: string[]
-  spotlight?: string
+  spotlight?: string,
+  notes?: string
 }
 
 const Page = ({
@@ -13,9 +14,10 @@ const Page = ({
   title,
   slug,
   description = '',
-  parameters= '',
+  parameters = '',
   examples = [],
   spotlight = '',
+  notes = '',
 }: PageParmas) =>
   `
 ---
@@ -34,6 +36,10 @@ ${spotlight}
 ## Parameters
 
 ${parameters}
+
+${notes ? '## Notes' : ''}
+
+${notes}
 
 ## Result
 

@@ -11,8 +11,6 @@ Some signup details
 
 Some other very long text.
 
-
-
 ## Parameters
 
 
@@ -84,27 +82,6 @@ The password of the user.
 <li className="method-list-item">
   <h4 className="method-list-item-label">
     <span className="method-list-item-label-name">
-      access_token
-    </span>
-    <span className="method-list-item-label-badge false">
-      optional
-    </span>
-    <span className="method-list-item-validation">
-      string
-    </span>
-  </h4>
-  <div class="method-list-item-description">
-
-If using OAuth, the access token returned from the provider.
-  
-  </div>
-  
-</li>
-
-
-<li className="method-list-item">
-  <h4 className="method-list-item-label">
-    <span className="method-list-item-label-name">
       provider
     </span>
     <span className="method-list-item-label-badge false">
@@ -117,6 +94,27 @@ If using OAuth, the access token returned from the provider.
   <div class="method-list-item-description">
 
 The Oauth provider.
+  
+  </div>
+  
+</li>
+
+
+<li className="method-list-item">
+  <h4 className="method-list-item-label">
+    <span className="method-list-item-label-name">
+      access_token
+    </span>
+    <span className="method-list-item-label-badge false">
+      optional
+    </span>
+    <span className="method-list-item-validation">
+      string
+    </span>
+  </h4>
+  <div class="method-list-item-description">
+
+If using OAuth, the access token returned from the provider.
   
   </div>
   
@@ -148,6 +146,13 @@ No description provided. [Contribute?](https://supabase.io)
 </li>
 
 </ul>
+
+
+## Notes
+
+- A user can sign up either via email or OAuth.
+- If you provide `email`, `password` is also required
+- If you provide `access_token`, `password` is also required
 
 
 ## Result

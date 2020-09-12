@@ -70,6 +70,7 @@ async function gen(inputFileName, outputDir) {
         parameters: hasTsRef ? generateParameters(tsDefinition) : '',
         spotlight: generateSpotlight(pageSpec['examples'] || [], allLanguages),
         examples: generateExamples(pageSpec['examples'] || [], allLanguages),
+        notes: pageSpec.notes,
       })
 
       // Write to disk
@@ -104,7 +105,7 @@ function recurseThroughParams(paramDefinition: TsDoc.TypeDefinition) {
 
   if (!!children) {
     let properties = children
-      .sort((a, b) => Number(a.flags.isOptional || 0) - Number(b.flags.isOptional || 0)) // required params first
+      .sort((a, b) => (a.flags?.isOptional ? 1 : -1)) // required params first
       .map((x) => recurseThroughParams(x))
     let heading = `<h5 class="method-list-title method-list-title-isChild expanded">Properties</h5>`
     subContent = methodListGroup([heading].concat(properties).join('\n'))

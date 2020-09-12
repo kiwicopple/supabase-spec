@@ -854,6 +854,9 @@ a.hash-link {
   border-bottom: 1px solid var(--custom-border-color);
 }
 
+h4.method-list-item-label {
+  display: flex;
+}
 h4.method-list-item-label .method-list-item-label-name {
   font-family: var(--ifm-font-family-monospace);
   font-size: 0.8rem;

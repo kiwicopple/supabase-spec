@@ -26,6 +26,7 @@ export namespace OpenRef {
   export type Page = {
     pageName: string
     description?: string
+    notes?: string
     // $ref?: string // reference to a TSDoc node
   }
 }
