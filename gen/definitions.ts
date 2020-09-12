@@ -15,6 +15,7 @@ export namespace TsDoc {
     name: string
     kind: number
     kindString: 'Parameter'
+    comment?: CommentTag
     flags: { isExported: boolean; isOptional?: boolean }
     type: { type: string; name: string; declaration: TypeDefinition }
     children: TypeDefinition[]

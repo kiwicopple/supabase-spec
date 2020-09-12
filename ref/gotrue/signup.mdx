@@ -42,27 +42,6 @@ No description provided. [Contribute?](https://supabase.io)
 <li className="method-list-item">
   <h4 className="method-list-item-label">
     <span className="method-list-item-label-name">
-      access_token
-    </span>
-    <span className="method-list-item-label-badge required">
-      required
-    </span>
-    <span className="method-list-item-validation">
-      string
-    </span>
-  </h4>
-  <div class="method-list-item-description">
-
-No description provided. [Contribute?](https://supabase.io)
-  
-  </div>
-  
-</li>
-
-
-<li className="method-list-item">
-  <h4 className="method-list-item-label">
-    <span className="method-list-item-label-name">
       email
     </span>
     <span className="method-list-item-label-badge required">
@@ -74,7 +53,7 @@ No description provided. [Contribute?](https://supabase.io)
   </h4>
   <div class="method-list-item-description">
 
-No description provided. [Contribute?](https://supabase.io)
+The email of the user which is signing up.
   
   </div>
   
@@ -95,7 +74,28 @@ No description provided. [Contribute?](https://supabase.io)
   </h4>
   <div class="method-list-item-description">
 
-No description provided. [Contribute?](https://supabase.io)
+The password of the user.
+  
+  </div>
+  
+</li>
+
+
+<li className="method-list-item">
+  <h4 className="method-list-item-label">
+    <span className="method-list-item-label-name">
+      access_token
+    </span>
+    <span className="method-list-item-label-badge false">
+      optional
+    </span>
+    <span className="method-list-item-validation">
+      string
+    </span>
+  </h4>
+  <div class="method-list-item-description">
+
+If using OAuth, the access token returned from the provider.
   
   </div>
   
@@ -107,16 +107,16 @@ No description provided. [Contribute?](https://supabase.io)
     <span className="method-list-item-label-name">
       provider
     </span>
-    <span className="method-list-item-label-badge required">
-      required
+    <span className="method-list-item-label-badge false">
+      optional
     </span>
     <span className="method-list-item-validation">
-      string
+      GOOGLE | GITHUB | GITLAB
     </span>
   </h4>
   <div class="method-list-item-description">
 
-No description provided. [Contribute?](https://supabase.io)
+The Oauth provider.
   
   </div>
   

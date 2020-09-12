@@ -97,12 +97,15 @@ function recurseThroughParams(paramDefinition: TsDoc.TypeDefinition) {
   const labelParams = {
     name: paramDefinition.name,
     isOptional: !!paramDefinition.flags.isOptional,
-    type: paramDefinition.type.name || 'object',
+    type: extractParamTypeAsString(paramDefinition),
+    description: paramDefinition.comment ? tsDocCommentToMdComment(paramDefinition.comment) : null,
   }
   let subContent = ''
-  
+
   if (!!children) {
-    let properties = children.map((x) => recurseThroughParams(x))
+    let properties = children
+      .sort((a, b) => Number(a.flags.isOptional || 0) - Number(b.flags.isOptional || 0)) // required params first
+      .map((x) => recurseThroughParams(x))
     let heading = `<h5 class="method-list-title method-list-title-isChild expanded">Properties</h5>`
     subContent = methodListGroup([heading].concat(properties).join('\n'))
   }
@@ -116,7 +119,7 @@ const methodListGroup = (items) => `
 </ul>
 `
 
-const methodListItemLabel = ({ name, isOptional, type }, subContent) => `
+const methodListItemLabel = ({ name, isOptional, type, description }, subContent) => `
 <li className="method-list-item">
   <h4 className="method-list-item-label">
     <span className="method-list-item-label-name">
@@ -131,7 +134,7 @@ const methodListItemLabel = ({ name, isOptional, type }, subContent) => `
   </h4>
   <div class="method-list-item-description">
 
-No description provided. [Contribute?](https://supabase.io)
+${description ? description : 'No description provided. [Contribute?](https://supabase.io)'}
   
   </div>
   ${subContent}
@@ -163,6 +166,17 @@ function generateTabs(allLanguages: any, example: any) {
       return Tab(library.id, content)
     })
     .join('\n')
+}
+
+function extractParamTypeAsString(paramDefinition) {
+  if (paramDefinition.type?.name) {
+    return paramDefinition.type.name
+  }
+  if (paramDefinition.type?.type == 'union') {
+    return paramDefinition.type.types.map((x) => x.value).join(' | ')
+  } else {
+    return 'object'
+  }
 }
 
 /**

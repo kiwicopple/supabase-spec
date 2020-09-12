@@ -9,11 +9,14 @@ declare module '@supabase/gotrue-js' {
    */
   const signup: (
     signupOptions: {
-      /** The email of the user which is signing up */
+      /** The email of the user which is signing up. */
       email: string
+      /** The password of the user. */
       password: string
-      access_token: string
-      provider: string
+      /** If using OAuth, the access token returned from the provider. */
+      access_token?: string
+      /** The Oauth provider. */
+      provider?: 'GOOGLE' | 'GITHUB' | 'GITLAB'
     },
     somethingElse?: string
   ) => Promise<string>
