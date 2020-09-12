@@ -61,18 +61,13 @@ async function gen(inputFileName, outputDir) {
       const tsDefinition = hasTsRef && extractTsDocNode(hasTsRef, definition)
       if (hasTsRef && !tsDefinition) throw new Error('Definition not found: ' + hasTsRef)
 
-      const functionDeclaration = tsDefinition?.type?.declaration
-      const paramsComments: TsDoc.CommentTag = tsDefinition.comment?.tags?.filter(x => x.tag == 'param')
-      const paramDefinitions: TsDoc.TypeDefinition[] = functionDeclaration.signatures[0].parameters // PMC: seems flaky.. why the [0]?
-      let parameters = `<ul>${paramDefinitions.map((x) => recurseThroughParams(x)).join(`\n`)}</ul>`
-
       // Create page
       const content = Page({
         slug,
         id: slug,
         title: pageSpec.pageName,
         description: pageSpec.description || tsDocCommentToMdComment(tsDefinition.comment),
-        parameters,
+        parameters: hasTsRef ? generateParameters(tsDefinition) : '',
         spotlight: generateSpotlight(pageSpec['examples'] || [], allLanguages),
         examples: generateExamples(pageSpec['examples'] || [], allLanguages),
       })
@@ -85,6 +80,16 @@ async function gen(inputFileName, outputDir) {
       console.error(error)
     }
   })
+}
+
+function generateParameters(tsDefinition: any) {
+  const functionDeclaration = tsDefinition?.type?.declaration
+  const paramDefinitions: TsDoc.TypeDefinition[] = functionDeclaration.signatures[0].parameters // PMC: seems flaky.. why the [0]?
+  if (!paramDefinitions) return ''
+
+  // const paramsComments: TsDoc.CommentTag = tsDefinition.comment?.tags?.filter(x => x.tag == 'param')
+  let parameters = `<ul>${paramDefinitions.map((x) => recurseThroughParams(x)).join(`\n`)}</ul>`
+  return parameters
 }
 
 function recurseThroughParams(paramDefinition: TsDoc.TypeDefinition) {
@@ -126,11 +131,11 @@ function generateTabs(allLanguages: any, example: any) {
  * You can pass it a deeply nested node using dot notation. eg: 'LoggedInUser.data.email'
  */
 function extractTsDocNode(nodeToFind: string, definition: any) {
-  const nodeTree = nodeToFind.split('.')
+  const nodePath = nodeToFind.split('.')
   let i = 0
-  let currentNode = null
-  while (i < nodeTree.length) {
-    currentNode = definition.children.find((x) => x.name == nodeTree[i]) || null
+  let currentNode = definition
+  while (i < nodePath.length) {
+    currentNode = currentNode.children.find((x) => x.name == nodePath[i]) || null
     if (currentNode == null) break
     i++
   }

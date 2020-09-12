@@ -46,6 +46,13 @@ declare module '@supabase/gotrue-js' {
    */
   const onAuthStateChange: (callbackFunction: string) => boolean
 
+  /**
+   * Some details about jwt.
+   *
+   * Some other very long text.
+   */
+  const jwt: (callbackFunction: string) => string
+
   interface LoggedInUser {
     jwt: string
     logout: () => boolean
