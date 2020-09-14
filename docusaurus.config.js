@@ -22,7 +22,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'docs/',
+          to: '/docs',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
@@ -47,18 +47,38 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Company',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Humans',
+              to: 'https://supabase.io/humans.txt',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Blog',
+              to: '/blog',
+            },
+            {
+              label: 'Open source',
+              to: '/oss',
+            },
+          ],
+        },
+        {
+          title: 'Resources',
+          items: [
+            {
+              label: 'Docs',
+              to: '/docs',
+            },
+            {
+              label: 'Pricing',
+              to: '/docs/pricing',
+            },
+            {
+              label: 'Support',
+              to: '/docs/support',
             },
           ],
         },
@@ -66,34 +86,42 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/supabase/supabase',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/supabase_io',
             },
+            {
+              label: 'DevTo',
+              href: 'https://dev.to/supabase',
+            },
+            {
+              label: 'Stackshare',
+              href: 'https://stackshare.io/supabase',
+            },
+            {
+              label: 'Product Hunt',
+              href: 'https://www.producthunt.com/posts/supabase-alpha',
+            },
+            // {
+            //   label: "Discord",
+            //   href: "https://discordapp.com/invite/docusaurus"
+            // }
           ],
         },
         {
-          title: 'More',
+          title: 'Alpha',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Join our alpha',
+              href: 'https://app.supabase.io',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Supabase.`,
     },
     algolia: {
       apiKey: '766d56f13dd1e82f43253559b7c86636',
@@ -138,7 +166,7 @@ module.exports = {
         docs: {
           // id: "w1", // for first plugin-content-docs with "docs/" path, do not set this if you want versioning to work
           // homePageId: "doc1",
-          sidebarPath: require.resolve('./sidebarsDocs.js'),
+          sidebarPath: require.resolve('./sidebar_docs.js'),
           // disableVersioning: true,
         },
         theme: {
