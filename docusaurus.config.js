@@ -1,21 +1,26 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Supabase',
+  tagline: 'The open source Firebase alternative.',
+  url: 'https://supabase.io',
   baseUrl: '/',
-  onBrokenLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  favicon: '/favicon.ico',
+  organizationName: 'supabase', // Usually your GitHub org/user name.
+  projectName: 'supabase', // Usually your repo name.
+  // onBrokenLinks: 'warn',
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {
-      title: 'My Site',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Supabase',
+        src: '/supabase-light.svg',
+        srcDark: '/supabase-dark.svg',
       },
       items: [
+        {
+          href: 'https://github.com/facebook/docusaurus',
+          className: 'navbar-item-github',
+          position: 'left',
+        },
         {
           to: 'docs/',
           activeBasePath: 'docs',
@@ -38,11 +43,6 @@ module.exports = {
             },
             // ... more items
           ],
-        },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
         },
       ],
     },
@@ -94,6 +94,41 @@ module.exports = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+    },
+    algolia: {
+      apiKey: '766d56f13dd1e82f43253559b7c86636',
+      indexName: 'supabase-docs',
+    },
+    colorMode: {
+      // "light" | "dark"
+      defaultMode: 'light',
+
+      // Hides the switch in the navbar
+      // Useful if you want to support a single color mode
+      disableSwitch: false,
+
+      // Should we use the prefers-color-scheme media-query,
+      // using user system preferences, instead of the hardcoded defaultMode
+      respectPrefersColorScheme: false,
+
+      // Dark/light switch icon options
+      switchConfig: {
+        // Icon for the switch while in dark mode
+        darkIcon: '  ',
+        darkIconStyle: {
+          marginTop: '1px',
+        },
+        lightIcon: '  ',
+        lightIconStyle: {
+          marginTop: '1px',
+        },
+      },
+    },
+    prism: {
+      defaultLanguage: 'JavaScript',
+      plugins: ['line-numbers', 'show-language'],
+      theme: require('@kiwicopple/prism-react-renderer/themes/vsDark'),
+      darkTheme: require('@kiwicopple/prism-react-renderer/themes/vsDark'),
     },
   },
   presets: [

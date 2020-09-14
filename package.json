@@ -17,6 +17,7 @@
     "@docusaurus/core": "2.0.0-alpha.63",
     "@docusaurus/plugin-content-docs": "^2.0.0-alpha.63",
     "@docusaurus/preset-classic": "2.0.0-alpha.63",
+    "@kiwicopple/prism-react-renderer": "github:kiwicopple/prism-react-renderer",
     "@mdx-js/react": "^1.5.8",
     "clsx": "^1.1.1",
     "minimist": "^1.2.5",
