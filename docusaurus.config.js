@@ -17,7 +17,7 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/supabase/supabase',
           className: 'navbar-item-github',
           position: 'left',
         },
@@ -105,10 +105,6 @@ module.exports = {
               label: 'Product Hunt',
               href: 'https://www.producthunt.com/posts/supabase-alpha',
             },
-            // {
-            //   label: "Discord",
-            //   href: "https://discordapp.com/invite/docusaurus"
-            // }
           ],
         },
         {
@@ -121,7 +117,6 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Supabase.`,
     },
     algolia: {
       apiKey: '766d56f13dd1e82f43253559b7c86636',
