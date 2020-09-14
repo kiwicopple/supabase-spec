@@ -6,7 +6,7 @@ module.exports = {
   favicon: '/favicon.ico',
   organizationName: 'supabase', // Usually your GitHub org/user name.
   projectName: 'supabase', // Usually your repo name.
-  // onBrokenLinks: 'warn',
+  onBrokenLinks: 'warn',
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {
