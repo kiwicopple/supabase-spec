@@ -27,11 +27,6 @@ info:
           - insert()
           - update()
           - delete()
-      - name: 'Filters'
-        items:
-          - filter()
-          - eq()
-          - neq()
 
 pages:
 
@@ -44,7 +39,7 @@ pages:
      Some awesome description.
 
   select():
-    $ref: signup
+    $ref: SupabaseQueryClient.select
     examples:
       - name: Get all data from `'table'`
         isSpotlight: true
@@ -60,7 +55,7 @@ pages:
           ```
 
   insert():
-    $ref: login
+    $ref: SupabaseQueryClient.insert
     examples:
       - name: Sign up a new user
         js: |
@@ -76,45 +71,7 @@ pages:
           ```
    
   update():
-    $ref: login
+    $ref: SupabaseQueryClient.update
 
   delete():
-    $ref: login
-
-  filter():
-    $ref: user
-    examples:
-      - name: Sign up a new user
-        js: |
-          ```js
-          const { error, data } = await signup({
-            email: 'example@email.com',
-            password: 'example-password',
-          })
-          ```
-
-  eq():
-    $ref: LoggedInUser.data
-    examples:
-      - name: Sign up a new user
-        js: |
-          ```js
-          const { error, user } = await gotrue.user()
-          const { error, data } = await signup({
-            email: 'example@email.com',
-            password: 'example-password',
-          })
-          ```
-
-  neq():
-    $ref: LoggedInUser.data
-    examples:
-      - name: Sign up a new user
-        js: |
-          ```js
-          const { error, user } = await gotrue.user()
-          const { error, data } = await signup({
-            email: 'example@email.com',
-            password: 'example-password',
-          })
-          ```
+    $ref: SupabaseQueryClient.delete

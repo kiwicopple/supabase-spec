@@ -84,7 +84,11 @@ async function gen(inputFileName, outputDir) {
 }
 
 function generateParameters(tsDefinition: any) {
-  const functionDeclaration = tsDefinition?.type?.declaration
+  let functionDeclaration = null 
+  if (tsDefinition.kindString == 'Method') functionDeclaration = tsDefinition
+  else functionDeclaration = tsDefinition?.type?.declaration
+  if (!functionDeclaration) return ''
+
   const paramDefinitions: TsDoc.TypeDefinition[] = functionDeclaration.signatures[0].parameters // PMC: seems flaky.. why the [0]?
   if (!paramDefinitions) return ''
 

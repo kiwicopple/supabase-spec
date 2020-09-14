@@ -176,6 +176,18 @@ module.exports = {
     ],
   ],
   plugins: [
+    // [
+    //   '@docusaurus/plugin-content-docs',
+    //   {
+    //     id: 'supabase', // for first plugin-content-docs with "resources/" path
+    //     // homePageId: "doc2",
+    //     path: './ref/supabase', // Path to data on filesystem, relative to site dir.
+    //     routeBasePath: 'ref/supabase', // URL Route.
+    //     include: ['**/*.md', '**/*.mdx'],
+    //     sidebarPath: require.resolve('./sidebar_spec_supabase.js'),
+    //     // disableVersioning: true, // if not set with vesions, throw: Identifier 'React' has already been declared
+    //   },
+    // ],
     [
       '@docusaurus/plugin-content-docs',
       {

@@ -1252,13 +1252,13 @@
 			"children": [
 				{
 					"id": 63,
-					"name": "\"supabase-js\"",
+					"name": "\"postgrest-js\"",
 					"kind": 1,
 					"kindString": "Module",
 					"flags": {
 						"isExported": true
 					},
-					"originalName": "\"@supabase/supabase-js\"",
+					"originalName": "\"@supabase/postgrest-js\"",
 					"children": [
 						{
 							"id": 64,
@@ -7404,7 +7404,7 @@
 						{
 							"fileName": "spec/postgrest.d.ts",
 							"line": 1,
-							"character": 38
+							"character": 39
 						}
 					]
 				}

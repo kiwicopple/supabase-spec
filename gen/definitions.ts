@@ -14,7 +14,7 @@ export namespace TsDoc {
     id: string
     name: string
     kind: number
-    kindString: 'Parameter'
+    kindString: 'Parameter' | 'Method'
     comment?: CommentTag
     flags: { isExported: boolean; isOptional?: boolean }
     type: { type: string; name: string; declaration: TypeDefinition }

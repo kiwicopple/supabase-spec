@@ -1,4 +1,4 @@
-declare module '@supabase/postgrest-js' {
+declare module '@supabase/supabase-js' {
   enum FilterOperator {
     /** Finds all rows whose value on the stated columnName exactly matches the specified filterValue. */
     Equal = 'eq',
@@ -421,10 +421,7 @@ declare module '@supabase/postgrest-js' {
     getSubscriptions(): SupabaseRealtimeClient[]
   }
 
-  /**
-   * create a clenntXXX
-   */
-  function createClient (
+  const createClient: (
     /**
      * The unique Supabase URL which is supplied when you create a new project in your project dashboard.
      */
@@ -444,5 +441,5 @@ declare module '@supabase/postgrest-js' {
        */
       schema: string
     }
-  ) : SupabaseClient
+  ) => SupabaseClient
 }
