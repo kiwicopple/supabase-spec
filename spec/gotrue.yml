@@ -6,7 +6,7 @@ info:
     Some awesome description.
   version: 
     0.0.1
-  definition: '@supabase/gotrue-js'
+  definition: https://supabase.github.io/gotrue-js/spec.json
   libraries: 
     - name: 'JavaScript'
       id: 'js'
@@ -55,16 +55,16 @@ pages:
      Some awesome description.
 
   signUp:
-    $ref: signup
+    $ref: '"Client".Client.signUp'
     notes: |
       - A user can sign up either via email or OAuth.
       - If you provide `email`, `password` is also required
       - If you provide `access_token`, `password` is also required
     examples:
-      - name: Sign up a new user
+      - name: Sign up
         js: |
           ```js
-          const { error, data } = await gotrue.signup({
+          const { error, data } = await auth.signUp({
             email: 'example@email.com',
             password: 'example-password',
           })
@@ -75,13 +75,13 @@ pages:
           ```
 
   signIn:
-    $ref: login
+    $ref: '"Client".Client.signIn'
     examples:
-      - name: Log in a new user
+      - name: Sign in
         isSpotlight: true
         js: |
           ```js
-          const { error, data } = await gotrue.signup({
+          const { error, data } = await auth.signIn({
             email: 'example@email.com',
             password: 'example-password',
           })
@@ -90,69 +90,54 @@ pages:
           ```py
           # Not yet implemented
           ```
-      - name: Log in a new user 2
+
+  signOut:
+    $ref: '"Client".Client.signOut'
+    examples:
+      - name: Sign out
         js: |
           ```js
-          const { error, data } = await gotrue.signup({
-            email: 'example@email.com',
-            password: 'example-password',
-          })
-          ```
-        py: | 
-          ```py
-          # Not yet implemented
+          const { error, data } = await auth.signOut()
           ```
 
   user:
-    $ref: user
+    $ref: '"Client".Client.user'
     examples:
-      - name: Sign up a new user
+      - name: Get user
         js: |
           ```js
-          const { error, data } = await signup({
-            email: 'example@email.com',
-            password: 'example-password',
-          })
+          const { error, data } = await auth.user()
           ```
   update:
-    $ref: user
-    examples:
-      - name: Sign up a new user
-        js: |
-          ```js
-          const { error, data } = await signup({
-            email: 'example@email.com',
-            password: 'example-password',
-          })
-          ```
+    $ref: '"Client".Client.update'
 
   onAuthStateChange: 
-    $ref: onAuthStateChange
+    # $ref: onAuthStateChange
 
   api.signUpWithEmail:
-    description: |
-     Some awesome description.
+    $ref: '"Api".Api.signUpWithEmail'
+    examples:
+      - name: Sign up a new user with email
+        js: |
+          ```js
+          const { error, data } = await api
+            .signUpWithEmail('example@email.com', 'example-password')
+          ```
 
   api.signInWithEmail:
-    description: |
-     Some awesome description.
+    $ref: '"Api".Api.signInWithEmail'
 
   api.resetPasswordForEmail:
-    description: |
-     Some awesome description.
+    $ref: '"Api".Api.resetPasswordForEmail'
 
   api.signOut:
-    description: |
-     Some awesome description.
+    $ref: '"Api".Api.signOut'
 
   api.getUser:
-    description: |
-     Some awesome description.
+    $ref: '"Api".Api.getUser'
 
   api.updateUser:
-    description: |
-     Some awesome description.
+    $ref: '"Api".Api.updateUser'
      
   api.refreshAccessToken:
-    description: |
-     Some awesome description.
+    $ref: '"Api".Api.refreshAccessToken'

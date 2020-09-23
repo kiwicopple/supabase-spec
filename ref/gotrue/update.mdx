@@ -7,9 +7,7 @@ slug: update
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Some details about user().
-
-Some other very long text.
+Updates user data, if there is a logged in user.
 
 
 
@@ -21,34 +19,13 @@ Some other very long text.
 <li className="method-list-item">
   <h4 className="method-list-item-label">
     <span className="method-list-item-label-name">
-      jwt
+      attributes
     </span>
-    <span className="method-list-item-label-badge false">
-      optional
-    </span>
-    <span className="method-list-item-validation">
-      string
-    </span>
-  </h4>
-  <div class="method-list-item-description">
-
-No description provided. [Contribute?](https://supabase.io)
-  
-  </div>
-  
-</li>
-
-
-<li className="method-list-item">
-  <h4 className="method-list-item-label">
-    <span className="method-list-item-label-name">
-      password
-    </span>
-    <span className="method-list-item-label-badge false">
-      optional
+    <span className="method-list-item-label-badge required">
+      required
     </span>
     <span className="method-list-item-validation">
-      string
+      UserAttributes
     </span>
   </h4>
   <div class="method-list-item-description">
@@ -60,43 +37,3 @@ No description provided. [Contribute?](https://supabase.io)
 </li>
 
 </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Examples
-
-### Sign up a new user
-
-<Tabs
-  groupId="libraries"
-  values={[{ label: 'JavaScript', value: 'js' },{ label: 'Python', value: 'py' }]}>
-
-<TabItem value="js">
-
-```js
-const { error, data } = await signup({
-  email: 'example@email.com',
-  password: 'example-password',
-})
-```
-
-
-</TabItem>
-<TabItem value="py">
-
-None
-
-</TabItem>
-
-</Tabs>

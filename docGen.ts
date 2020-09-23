@@ -11,6 +11,7 @@ import Tab from './gen/components/Tab'
 import Tabs from './gen/components/Tabs'
 import { slugify, tsDocCommentToMdComment, writeToDisk } from './gen/lib/helpers'
 import { TsDoc, OpenRef } from './gen/definitions'
+import axios from 'axios'
 
 const yaml = require('js-yaml')
 const fs = require('fs')
@@ -33,7 +34,7 @@ const main = (fileNames, options) => {
 
 async function gen(inputFileName, outputDir) {
   const docSpec = yaml.safeLoad(fs.readFileSync(inputFileName, 'utf8'))
-  const definition = modules.find((x) => JSON.parse(x.originalName) == docSpec.info.definition)
+  const { data: definition } = await axios.get(docSpec.info.definition)
   const allLanguages = docSpec.info.libraries
   const pages = Object.entries(docSpec.pages).map(([name, x]: [string, OpenRef.Page]) => ({
     ...x,
@@ -61,12 +62,15 @@ async function gen(inputFileName, outputDir) {
       const tsDefinition = hasTsRef && extractTsDocNode(hasTsRef, definition)
       if (hasTsRef && !tsDefinition) throw new Error('Definition not found: ' + hasTsRef)
 
+      const description =
+        pageSpec.description || tsDocCommentToMdComment(getDescriptionFromDefintion(tsDefinition))
+
       // Create page
       const content = Page({
         slug,
         id: slug,
         title: pageSpec.pageName,
-        description: pageSpec.description || tsDocCommentToMdComment(tsDefinition.comment),
+        description,
         parameters: hasTsRef ? generateParameters(tsDefinition) : '',
         spotlight: generateSpotlight(pageSpec['examples'] || [], allLanguages),
         examples: generateExamples(pageSpec['examples'] || [], allLanguages),
@@ -84,7 +88,7 @@ async function gen(inputFileName, outputDir) {
 }
 
 function generateParameters(tsDefinition: any) {
-  let functionDeclaration = null 
+  let functionDeclaration = null
   if (tsDefinition.kindString == 'Method') functionDeclaration = tsDefinition
   else functionDeclaration = tsDefinition?.type?.declaration
   if (!functionDeclaration) return ''
@@ -95,6 +99,12 @@ function generateParameters(tsDefinition: any) {
   // const paramsComments: TsDoc.CommentTag = tsDefinition.comment?.tags?.filter(x => x.tag == 'param')
   let parameters = paramDefinitions.map((x) => recurseThroughParams(x)).join(`\n`)
   return methodListGroup(parameters)
+}
+
+function getDescriptionFromDefintion(tsDefinition) {
+  if (!tsDefinition) return null
+  if (tsDefinition.kindString == 'Method') return tsDefinition?.signatures[0].comment
+  else return tsDefinition?.comment || ''
 }
 
 function recurseThroughParams(paramDefinition: TsDoc.TypeDefinition) {
@@ -167,11 +177,17 @@ function generateSpotlight(specExamples: any, allLanguages: any) {
 function generateTabs(allLanguages: any, example: any) {
   return allLanguages
     .map((library) => {
-      let content = example[library.id] || 'None'
+      let content = example[library.id] || notImplemented
       return Tab(library.id, content)
     })
     .join('\n')
 }
+
+const notImplemented = `
+\`\`\`
+Not yet implemented
+\`\`\`
+`
 
 function extractParamTypeAsString(paramDefinition) {
   if (paramDefinition.type?.name) {

@@ -7,9 +7,7 @@ slug: signin
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Some details about `login()`.
-
-Some other very long text.
+Creates a new user.
 
 <Tabs
   groupId="libraries"
@@ -18,7 +16,7 @@ Some other very long text.
 <TabItem value="js">
 
 ```js
-const { error, data } = await gotrue.signup({
+const { error, data } = await auth.signIn({
   email: 'example@email.com',
   password: 'example-password',
 })
@@ -45,6 +43,27 @@ const { error, data } = await gotrue.signup({
 <li className="method-list-item">
   <h4 className="method-list-item-label">
     <span className="method-list-item-label-name">
+      credentials
+    </span>
+    <span className="method-list-item-label-badge required">
+      required
+    </span>
+    <span className="method-list-item-validation">
+      object
+    </span>
+  </h4>
+  <div class="method-list-item-description">
+
+The user login details.
+  
+  </div>
+  
+<ul className="method-list-group">
+  <h5 class="method-list-title method-list-title-isChild expanded">Properties</h5>
+
+<li className="method-list-item">
+  <h4 className="method-list-item-label">
+    <span className="method-list-item-label-name">
       email
     </span>
     <span className="method-list-item-label-badge required">
@@ -56,7 +75,7 @@ const { error, data } = await gotrue.signup({
   </h4>
   <div class="method-list-item-description">
 
-No description provided. [Contribute?](https://supabase.io)
+The user's email address.
   
   </div>
   
@@ -77,10 +96,14 @@ No description provided. [Contribute?](https://supabase.io)
   </h4>
   <div class="method-list-item-description">
 
-No description provided. [Contribute?](https://supabase.io)
+The user's password.
   
   </div>
   
+</li>
+
+</ul>
+
 </li>
 
 </ul>
@@ -100,7 +123,7 @@ No description provided. [Contribute?](https://supabase.io)
 
 ## Examples
 
-### Log in a new user
+### Sign in
 
 <Tabs
   groupId="libraries"
@@ -109,35 +132,7 @@ No description provided. [Contribute?](https://supabase.io)
 <TabItem value="js">
 
 ```js
-const { error, data } = await gotrue.signup({
-  email: 'example@email.com',
-  password: 'example-password',
-})
-```
-
-
-</TabItem>
-<TabItem value="py">
-
-```py
-# Not yet implemented
-```
-
-
-</TabItem>
-
-</Tabs>
-
-### Log in a new user 2
-
-<Tabs
-  groupId="libraries"
-  values={[{ label: 'JavaScript', value: 'js' },{ label: 'Python', value: 'py' }]}>
-
-<TabItem value="js">
-
-```js
-const { error, data } = await gotrue.signup({
+const { error, data } = await auth.signIn({
   email: 'example@email.com',
   password: 'example-password',
 })

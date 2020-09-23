@@ -901,7 +901,7 @@ html[data-theme='dark'] .navbar-item-github:before {
 .tabs {
   margin:0;
   font-size: 0.7rem;
-  background-color: var(--ifm-code-background);
+  background-color: var(--ifm-code-background-dark);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom: 1px solid var(--custom-border-color);
@@ -910,6 +910,10 @@ html[data-theme='dark'] .navbar-item-github:before {
   padding: 8px;
   border-radius: 0;
   border-width: 0px;
+  color: var(--ifm-color-gray-500);
+}
+.tabs li.tabs__item--active {
+  color: var(--custom-primary);
 }
 div[role=tabpanel], div[role=tabpanel] div {
   margin-top: 0 !important;

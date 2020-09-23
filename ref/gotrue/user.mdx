@@ -7,59 +7,12 @@ slug: user
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Some details about user().
-
-Some other very long text.
+Returns the user data, if there is a logged in user.
 
 
 
-## Parameters
 
 
-<ul className="method-list-group">
-  
-<li className="method-list-item">
-  <h4 className="method-list-item-label">
-    <span className="method-list-item-label-name">
-      jwt
-    </span>
-    <span className="method-list-item-label-badge false">
-      optional
-    </span>
-    <span className="method-list-item-validation">
-      string
-    </span>
-  </h4>
-  <div class="method-list-item-description">
-
-No description provided. [Contribute?](https://supabase.io)
-  
-  </div>
-  
-</li>
-
-
-<li className="method-list-item">
-  <h4 className="method-list-item-label">
-    <span className="method-list-item-label-name">
-      password
-    </span>
-    <span className="method-list-item-label-badge false">
-      optional
-    </span>
-    <span className="method-list-item-validation">
-      string
-    </span>
-  </h4>
-  <div class="method-list-item-description">
-
-No description provided. [Contribute?](https://supabase.io)
-  
-  </div>
-  
-</li>
-
-</ul>
 
 
 
@@ -76,7 +29,7 @@ No description provided. [Contribute?](https://supabase.io)
 
 ## Examples
 
-### Sign up a new user
+### Get user
 
 <Tabs
   groupId="libraries"
@@ -85,17 +38,18 @@ No description provided. [Contribute?](https://supabase.io)
 <TabItem value="js">
 
 ```js
-const { error, data } = await signup({
-  email: 'example@email.com',
-  password: 'example-password',
-})
+const { error, data } = await auth.user()
 ```
 
 
 </TabItem>
 <TabItem value="py">
 
-None
+
+```
+Not yet implemented
+```
+
 
 </TabItem>
 

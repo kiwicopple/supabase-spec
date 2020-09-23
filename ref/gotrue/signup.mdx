@@ -7,9 +7,7 @@ slug: signup
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Some signup details
-
-Some other very long text.
+Creates a new user.
 
 
 
@@ -21,7 +19,7 @@ Some other very long text.
 <li className="method-list-item">
   <h4 className="method-list-item-label">
     <span className="method-list-item-label-name">
-      signupOptions
+      credentials
     </span>
     <span className="method-list-item-label-badge required">
       required
@@ -32,7 +30,7 @@ Some other very long text.
   </h4>
   <div class="method-list-item-description">
 
-No description provided. [Contribute?](https://supabase.io)
+The user login details.
   
   </div>
   
@@ -53,7 +51,7 @@ No description provided. [Contribute?](https://supabase.io)
   </h4>
   <div class="method-list-item-description">
 
-The email of the user which is signing up.
+The user's email address.
   
   </div>
   
@@ -74,49 +72,7 @@ The email of the user which is signing up.
   </h4>
   <div class="method-list-item-description">
 
-The password of the user.
-  
-  </div>
-  
-</li>
-
-
-<li className="method-list-item">
-  <h4 className="method-list-item-label">
-    <span className="method-list-item-label-name">
-      provider
-    </span>
-    <span className="method-list-item-label-badge false">
-      optional
-    </span>
-    <span className="method-list-item-validation">
-      GOOGLE | GITHUB | GITLAB
-    </span>
-  </h4>
-  <div class="method-list-item-description">
-
-The Oauth provider.
-  
-  </div>
-  
-</li>
-
-
-<li className="method-list-item">
-  <h4 className="method-list-item-label">
-    <span className="method-list-item-label-name">
-      access_token
-    </span>
-    <span className="method-list-item-label-badge false">
-      optional
-    </span>
-    <span className="method-list-item-validation">
-      string
-    </span>
-  </h4>
-  <div class="method-list-item-description">
-
-If using OAuth, the access token returned from the provider.
+The user's password.
   
   </div>
   
@@ -124,27 +80,6 @@ If using OAuth, the access token returned from the provider.
 
 </ul>
 
-</li>
-
-
-<li className="method-list-item">
-  <h4 className="method-list-item-label">
-    <span className="method-list-item-label-name">
-      somethingElse
-    </span>
-    <span className="method-list-item-label-badge false">
-      optional
-    </span>
-    <span className="method-list-item-validation">
-      string
-    </span>
-  </h4>
-  <div class="method-list-item-description">
-
-No description provided. [Contribute?](https://supabase.io)
-  
-  </div>
-  
 </li>
 
 </ul>
@@ -167,7 +102,7 @@ No description provided. [Contribute?](https://supabase.io)
 
 ## Examples
 
-### Sign up a new user
+### Sign up
 
 <Tabs
   groupId="libraries"
@@ -176,7 +111,7 @@ No description provided. [Contribute?](https://supabase.io)
 <TabItem value="js">
 
 ```js
-const { error, data } = await gotrue.signup({
+const { error, data } = await auth.signUp({
   email: 'example@email.com',
   password: 'example-password',
 })
