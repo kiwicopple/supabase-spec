@@ -20,21 +20,25 @@ info:
         items:
           - index
           - Installing
-          - createClient()
+      - name: 'Client functions'
+        items:
+          - Client Instance
+          - signUp
+          - signIn
+          - signOut
+          - user
+          - update
+          - onAuthStateChange
       - name: 'General functions'
         items:
-          - signup()
-          - login()
-          - forgotPassword()
-          - jwt()
-      - name: 'User functions'
-        items:
-          - user()
-          - user().data()
-          - user().logout()
-      - name: 'Hooks/callbacks'
-        items:
-          - onAuthStateChange()
+          - API Instance
+          - api.signUpWithEmail
+          - api.signInWithEmail
+          - api.resetPasswordForEmail
+          - api.signOut
+          - api.getUser
+          - api.updateUser
+          - api.refreshAccessToken
 
 pages:
 
@@ -42,11 +46,15 @@ pages:
     description: |
      Some awesome description.
 
-  createClient(): 
+  Client Instance: 
     description: |
      Some awesome description.
 
-  signup():
+  API Instance: 
+    description: |
+     Some awesome description.
+
+  signUp:
     $ref: signup
     notes: |
       - A user can sign up either via email or OAuth.
@@ -66,7 +74,7 @@ pages:
           # Not yet implemented
           ```
 
-  login():
+  signIn:
     $ref: login
     examples:
       - name: Log in a new user
@@ -94,14 +102,19 @@ pages:
           ```py
           # Not yet implemented
           ```
-   
-  forgotPassword():
-    $ref: forgotPassword
 
-  jwt():
-    $ref: jwt
-
-  user():
+  user:
+    $ref: user
+    examples:
+      - name: Sign up a new user
+        js: |
+          ```js
+          const { error, data } = await signup({
+            email: 'example@email.com',
+            password: 'example-password',
+          })
+          ```
+  update:
     $ref: user
     examples:
       - name: Sign up a new user
@@ -113,33 +126,33 @@ pages:
           })
           ```
 
-  user().data():
-    $ref: LoggedInUser.data
-    examples:
-      - name: Sign up a new user
-        js: |
-          ```js
-          const { error, user } = await gotrue.user()
-          const { error, data } = await signup({
-            email: 'example@email.com',
-            password: 'example-password',
-          })
-          ```
-
-  user().logout():
-    $ref: LoggedInUser.logout
-    examples:
-      - name: Sign up a new user
-        js: |
-          ```js
-          const { error, user } = await gotrue.user()
-          const { error, data } = await signup({
-            email: 'example@email.com',
-            password: 'example-password',
-          })
-          ```
-
-  onAuthStateChange(): 
+  onAuthStateChange: 
     $ref: onAuthStateChange
 
-    
+  api.signUpWithEmail:
+    description: |
+     Some awesome description.
+
+  api.signInWithEmail:
+    description: |
+     Some awesome description.
+
+  api.resetPasswordForEmail:
+    description: |
+     Some awesome description.
+
+  api.signOut:
+    description: |
+     Some awesome description.
+
+  api.getUser:
+    description: |
+     Some awesome description.
+
+  api.updateUser:
+    description: |
+     Some awesome description.
+     
+  api.refreshAccessToken:
+    description: |
+     Some awesome description.

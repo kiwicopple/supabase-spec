@@ -1,13 +1,13 @@
 ---
-id: forgotpassword
-title: forgotPassword()
-slug: forgotpassword
+id: update
+title: update
+slug: update
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Some details about forgotPassword().
+Some details about user().
 
 Some other very long text.
 
@@ -21,10 +21,10 @@ Some other very long text.
 <li className="method-list-item">
   <h4 className="method-list-item-label">
     <span className="method-list-item-label-name">
-      email
+      jwt
     </span>
-    <span className="method-list-item-label-badge required">
-      required
+    <span className="method-list-item-label-badge false">
+      optional
     </span>
     <span className="method-list-item-validation">
       string
@@ -44,8 +44,8 @@ No description provided. [Contribute?](https://supabase.io)
     <span className="method-list-item-label-name">
       password
     </span>
-    <span className="method-list-item-label-badge required">
-      required
+    <span className="method-list-item-label-badge false">
+      optional
     </span>
     <span className="method-list-item-validation">
       string
@@ -60,3 +60,43 @@ No description provided. [Contribute?](https://supabase.io)
 </li>
 
 </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Examples
+
+### Sign up a new user
+
+<Tabs
+  groupId="libraries"
+  values={[{ label: 'JavaScript', value: 'js' },{ label: 'Python', value: 'py' }]}>
+
+<TabItem value="js">
+
+```js
+const { error, data } = await signup({
+  email: 'example@email.com',
+  password: 'example-password',
+})
+```
+
+
+</TabItem>
+<TabItem value="py">
+
+None
+
+</TabItem>
+
+</Tabs>
